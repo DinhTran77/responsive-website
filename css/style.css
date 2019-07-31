@@ -36,15 +36,16 @@
     }
 
 .logoContainer{
-    width: 30%;
-    height: 30%;
+    width: auto;
+    height: 20%;
     border: dashed red;
-    position: relative;
+    position: absolute;
+    top: 10%;
 }
 
 .logo img{
-    width: 45%;
-    height: auto;
+    width: auto;
+    height: 85%;
     position: absolute;
     position: absolute;
     top: 50%;
