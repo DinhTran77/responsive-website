@@ -1,12 +1,35 @@
+:root{
+    --margin-top: 2%
+    }
+    
+#header{
+    /* color: red; */
+    /* cursor: url('/images/cursor.svg'), default;	 */
+}
+
 #container
     {    
-    padding: 32px;
-    background-color: #FAF7EB;
+    /* padding: var(--margin-top) var(--margin-top) 0 var(--margin-top); */
+    /* background-color: #FAF7EB; */
+    background-size: cover;
     width: 100%;
     height: 100vh;
     flex-direction: column;
     align-items: center;
     }
+
+#mainContent{
+    /* background-color: #FAF7EB; */
+    background-size: cover;
+    width: 70%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*#region HERO SECTOIN*//**************************Hero Section ***************************/
 
 #header
     {
@@ -20,9 +43,12 @@
         overflow: hidden;
     }
 
+
 #heroContainer
     {
-    background: url("/images/main-banner-bg@2x.jpg") center;
+    /* background: url("/images/main-banner-bg@2x.jpg") center; */
+    background-color: #ffde1d;
+    background: -webkit-radial-gradient(#ffde1d,#ffd001);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -31,38 +57,237 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border: thick double #32a1ce;
     position: relative;
     }
 
-.logoContainer{
-    width: auto;
-    height: 20%;
-    border: dashed red;
+
+#mainNav
+    {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    /* right: -30%; */
+    /* background-color: grey;
+    z-index: 10; */
+    }
+
+#menu{
+    width:50%;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+
+#mainNav2
+    {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 9%;
+    right: -40%;
+    /* right: -30%; */
+    /* background-color: grey;
+    z-index: 10; */
+    }
+
+#menu2{
+
+    /* background-color: grey; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.slash
+{
+    display: inline-block;
+    margin: 0 20px 0 20px;
+    color: #fc589f;
+}
+
+#mainNav a{
+    color: #373838;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    /* border: solid 1px green; */
+}
+
+#mainNav2 a{
+    color: #585858;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-transform: lowercase;
+    font-weight: 530;
+    font-size: 1em;
+    line-height: 1.5em;
+    /* letter-spacing: 0.3em; */
+    /* border: solid 1px green; */
+}
+
+
+
+.star0{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+.star1{
     position: absolute;
     top: 10%;
+    left: 40%;
+}
+
+.star2{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    
+}
+
+.star3{
+    position: absolute;
+    left: 90%;
+    top: 20%;
+}
+
+
+.star4{
+    position: absolute;
+    left: 70%;
+    top: 60%;
+}
+
+.star5{
+    position: absolute;
+    top: 70%;
+    left: 20%;
+
+}
+
+.star6{
+    position: absolute;
+    left: 6%;
+    top: 93%;
+}
+
+.star7{
+    position: absolute;
+    left: 50%;
+    top: 94%;
+}
+
+.star8{
+    position: absolute;
+    left: 90%;
+    top: 97%;
+}
+
+
+.star9{
+    position: absolute;
+    left: 70%;
+    top: 20%;
+}
+
+
+.starAnimation
+{
+    animation: blink 700ms infinite ease-out;
+    animation-direction: alternate;
+    /* animation-delay: 200ms; */
+}
+
+    @keyframes blink {
+        0% {
+        opacity: .2;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+
+.fast{
+    animation-duration: 300ms;
+}
+
+/* .LogoAnimation
+{
+    animation: LogoBlink 1000ms infinite ease-out;
+    animation-direction: alternate;
+}
+
+    @keyframes LogoBlink {
+        0% {
+        opacity: .3;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+ */
+
+
+
+.logoContainer{
+    width: auto;
+    height: 50%;
+    display: flex;
+    /* border: dashed red; */
+    position: absolute;
+    /* top: 10%; */
+    justify-content: center;
+    align-items: center;
 }
 
 .logo img{
     width: auto;
-    height: 85%;
+    height: 100%;
     position: absolute;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  
+
+    /* animation-name: example; */
+    /* animation: example 400ms infinite alternate; */
+}
+
+.logo .logoT{
+    /* background-color: GREY; */
+    Z-INDEX: 14;
+    width: 70%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 48%;
 
 }
+
+@keyframes example {
+    from {background-color: #EBDCA4;}
+    to {background-color: rgb(240, 189, 4);}
+  }
+
 
 .dotted-circle {
     fill: none;
     stroke: #faf7eb;
     stroke-linecap: round;
-    stroke-width: 2px;
-    stroke-dasharray: 1 6;
+    stroke-width: 2.5px;
+    stroke-dasharray: 0 13.5;
     animation: small-spin 60s linear infinite;
-    height: 100%;
+    height: 87%;
     width: auto;
     display: block;
     margin: 0 auto;
@@ -110,6 +335,13 @@
         100% {
           transform: rotate(360deg); } }
 
+
+/*#endregion HERO */
+
+
+/*#region ABOUT ME*//**************************ABOUT ME SECTION ***************************/
+
+
 #aboutMeSection
     {
     display: flex;
@@ -119,36 +351,61 @@
     position: relative;
     }
 
-#aboutMe_text
-    {
-    background: url('/images/about-text_background.png') center;
-    background-repeat: no-repeat;
-    background-position: left top;
-    position: relative; 
-    background-size: auto;
-    height: 700px;
-    background-color:#DBBD7F;
-    margin: 36px 18px 0 0;
-    }
+                /**************************about me LEFT Panel***************************/
+                #aboutMe_left
+                    {
+                    /* background: url('/images/about-text_background.png') center; */
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    top: 0;
+                    left: 0;
+                    position: relative; 
+                    background-size: 20%;
+                    background-position: 0 0;
+                    height: 700px;
+                    /* background-color:#5113ff; */
+                    overflow: hidden;
+                    border: solid pink;
+                    }
 
-.aboutMeImage
-    {
-    width: 100%;
-    height: auto;
-    }
+                    .aboutMe_text
+                        {
+                        position: absolute;
+                        }
+
+                    .aboutMeImage
+                    {
+                        width: auto;
+                        height: 110%;
+                        position: absolute;
+                        left: 70%;
+                        top: -5%;
+                        animation: big-spin 120s linear infinite;
+                    }
 
 
-#aboutMe_HeadShot
-    {
-    background: url('/images/headshot.jpg') center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 36px 0 0 18px;
-    }
+                        @keyframes big-spin {
+                            0% {
+                            transform: rotate(0deg); }
+                        
+                            100% {
+                            transform: rotate(360deg); } }
 
 
+                    /**************************about me Right Panel***************************/
 
-#recentWorkSection
+                    .aboutMe_HeadShot
+                        {
+                        /* background: url('/images/headshot.jpg') center; */
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-color: grey;
+                        }
+/*#endregion ABOUT ME*/
+
+/*#region PORTFOLIO*//**************************PORTFOLIO SECTION***************************/
+
+#porfolioSection
     {
     background-image: url("/images/recent-work@2x.jpg");
     background-size: cover;
@@ -158,6 +415,10 @@
     min-height: 900px;
     margin-top: 36px;
     }
+/*#endregion PORTFOLIO*/
+
+
+/*#region EDUCATION*//**************************EDUCATION SECTION***************************/
 
 #educationSection
     {
@@ -168,16 +429,88 @@
     height: 200px;
     min-height: 900px;
     margin-top: 36px;
-    color: red;
     overflow: hidden;
     }
+/*#endregion RegionName*/
+
+
+/*#region EXPERIENCE*//**************************EXPERIENCE SECTION***************************/
+
+#experienceSection
+    {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #DBBD7F;
+    width: 100%;
+    height: 200px;
+    min-height: 900px;
+    margin-top: 36px;
+    overflow: hidden;
+    }
+/*#endregion EXPERIENCE*/
+
+
+/*#region CONTACT*//**************************CONTACT SECTION***************************/
+
+
+#contactSection{
+    display: flex;
+}
+
+#skillsSection{
+    display: flex;
+}
+
+.skills_left{
+background-color: #1D3E5F;
+margin-top: var(--margin-top);
+}
+
+.skills_right{
+background-color: #DBBD7F;
+margin-top: var(--margin-top);
+}
+
+#contactLinks
+{
+    flex: 25%;
+    background-color:#DABC7F;
+}
+
+#contactMessage
+{
+    flex: 75%;
+    background-color: #203F5C;
+}
+/*#endregion CONTACT*/
+
+
+/*#region FOOTER*//**************************FOOTER SECTION***************************/
+
+#mainFooter{
+    margin-top: var(--margin-top);
+    background-color: #204161;
+}
+/*#endregion FOOTER*/
+
+
+/*#region REUSABLE*//**************************REUSABLE CSS***************************/
 
 .row 
     {
     display: flex;
     }
   
-.column 
+.column50 
     {
     flex: 50%;
     }
+
+.margin-left-section{
+    margin: var(--margin-top) calc(var(--margin-top)/2) 0% 0;
+}
+
+.margin-right-section{
+    margin: var(--margin-top) 0% 0% calc(var(--margin-top)/2);
+}
+/*#endregion REUSABLE*/
