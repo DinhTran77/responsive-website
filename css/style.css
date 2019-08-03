@@ -1,10 +1,14 @@
 :root{
     --margin-top: 2%
     }
-    
-#header{
-    /* color: red; */
-    /* cursor: url('/images/cursor.svg'), default;	 */
+
+    .main {
+        margin-top: 30px; /* Add a top margin to avoid content overlay */
+      }
+
+
+#menu{
+    white-space: nowrap;
 }
 
 #container
@@ -14,18 +18,22 @@
     background-size: cover;
     width: 100%;
     height: 100vh;
+    display:flex; 
     flex-direction: column;
     align-items: center;
     }
 
 #mainContent{
     /* background-color: #FAF7EB; */
-    background-size: cover;
+    /* background-size: cover; */
     width: 70%;
-    height: 100vh;
+    /* height: 100vh; */
     flex-direction: column;
     align-items: center;
+    /* padding-top: 170px; */
 }
+
+
 
 
 
@@ -60,48 +68,55 @@
     position: relative;
     }
 
+.responsiveImages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+img{
+    width: 18vw;
+    height: 18vw;
+    object-fit: cover;
+    margin: 2%;
+}
+
+.flexslider .slides img {
+    /* max-height: 200px; maximum height for all slides */
+    width: auto; /*proper aspect ratio of images*/
+    max-width: 100%; /*maximum width for all slides*/
+    margin: 0 auto; /*centering images in the container*/
+}
+
+#imgRow2, #imgRow1{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    /* border: solid red; */
+}
 
 #mainNav
     {
     display: flex;
     width: 100%;
-    position: absolute;
-    top: 5%;
-    /* right: -30%; */
-    /* background-color: grey;
-    z-index: 10; */
+    position: fixed;
+    top: 0%;
+    z-index: 10;
+    overflow: hidden;
     }
 
 #menu{
-    width:50%;
-    /* background-color: grey; */
+    width:100%;
+    background-color: rgb(233, 231, 231);
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    height: 60px;
+    align-items: center;
+
 }
 
-
-
-#mainNav2
-    {
-    display: flex;
-    width: 100%;
-    position: absolute;
-    top: 9%;
-    right: -40%;
-    /* right: -30%; */
-    /* background-color: grey;
-    z-index: 10; */
-    }
-
-#menu2{
-
-    /* background-color: grey; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-}
 
 
 .slash
@@ -111,8 +126,9 @@
     color: #fc589f;
 }
 
+
 #mainNav a{
-    color: #373838;
+    color: #202020;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -122,84 +138,20 @@
     /* border: solid 1px green; */
 }
 
-#mainNav2 a{
-    color: #585858;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    text-transform: lowercase;
-    font-weight: 530;
-    font-size: 1em;
-    line-height: 1.5em;
-    /* letter-spacing: 0.3em; */
-    /* border: solid 1px green; */
+#mainNav a:hover{
+    color: #7f8181;
 }
 
-
-
-.star0{
-    position: absolute;
-    top: 15%;
-    left: 5%;
-}
-
-.star1{
-    position: absolute;
-    top: 10%;
-    left: 40%;
-}
-
-.star2{
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    
-}
-
-.star3{
-    position: absolute;
-    left: 90%;
-    top: 20%;
-}
-
-
-.star4{
-    position: absolute;
-    left: 70%;
-    top: 60%;
-}
-
-.star5{
-    position: absolute;
-    top: 70%;
-    left: 20%;
-
-}
-
-.star6{
-    position: absolute;
-    left: 6%;
-    top: 93%;
-}
-
-.star7{
-    position: absolute;
-    left: 50%;
-    top: 94%;
-}
-
-.star8{
-    position: absolute;
-    left: 90%;
-    top: 97%;
-}
-
-
-.star9{
-    position: absolute;
-    left: 70%;
-    top: 20%;
-}
-
+@font-face {
+    font-family: 'flexslider-icon';
+    /*THIS-->*/
+    src: url('/fonts/flexslider-icon.eot');
+    /**MIGHT HAVE TO BE THIS- ../ TO GO OUT OF THE CSS FOLDER - THEN INTO A FONTS FOLDER*/
+    src: url('/fonts/flexslider-icon.eot');
+    src: url('/fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('/fonts/flexslider-icon.woff') format('woff'), url('/fonts/flexslider-icon.ttf') format('truetype'), url('/fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 .starAnimation
 {
@@ -221,39 +173,22 @@
     animation-duration: 300ms;
 }
 
-/* .LogoAnimation
-{
-    animation: LogoBlink 1000ms infinite ease-out;
-    animation-direction: alternate;
-}
-
-    @keyframes LogoBlink {
-        0% {
-        opacity: .3;
-        }
-        100% {
-        opacity: 1;
-        }
-    }
- */
-
-
 
 .logoContainer{
     width: auto;
     height: 50%;
-    display: flex;
+    /* display: flex; */
     /* border: dashed red; */
-    position: absolute;
+    /* position: absolute; */
     /* top: 10%; */
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
+    position: relative;
 }
 
 .logo img{
     width: auto;
     height: 100%;
-    position: absolute;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -289,8 +224,14 @@
     animation: small-spin 60s linear infinite;
     height: 87%;
     width: auto;
-    display: block;
-    margin: 0 auto;
+    position: absolute;
+    /* margin: 0 auto; */
+    top: 13%;
+    left: 0%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
 }
 
 @keyframes small-spin {
@@ -344,121 +285,61 @@
 
 #aboutMeSection
     {
-    display: flex;
     flex-direction: row;
     width: 100%;
     height: auto;
     position: relative;
     }
-
-                /**************************about me LEFT Panel***************************/
-                #aboutMe_left
-                    {
-                    /* background: url('/images/about-text_background.png') center; */
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    top: 0;
-                    left: 0;
-                    position: relative; 
-                    background-size: 20%;
-                    background-position: 0 0;
-                    height: 700px;
-                    /* background-color:#5113ff; */
-                    overflow: hidden;
-                    border: solid pink;
-                    }
-
-                    .aboutMe_text
-                        {
-                        position: absolute;
-                        }
-
-                    .aboutMeImage
-                    {
-                        width: auto;
-                        height: 110%;
-                        position: absolute;
-                        left: 70%;
-                        top: -5%;
-                        animation: big-spin 120s linear infinite;
-                    }
-
-
-                        @keyframes big-spin {
-                            0% {
-                            transform: rotate(0deg); }
-                        
-                            100% {
-                            transform: rotate(360deg); } }
-
-
-                    /**************************about me Right Panel***************************/
-
-                    .aboutMe_HeadShot
-                        {
-                        /* background: url('/images/headshot.jpg') center; */
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        background-color: grey;
-                        }
 /*#endregion ABOUT ME*/
 
-/*#region PORTFOLIO*//**************************PORTFOLIO SECTION***************************/
 
-#porfolioSection
-    {
-    background-image: url("/images/recent-work@2x.jpg");
+/*#region PORTFOLIO*//**************************Responsive Images SECTION***************************/
+.responsiveImages{
+    background-image: url(/images/background.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-color: grey;
-    width: 100%;
-    min-height: 900px;
-    margin-top: 36px;
-    }
+}
+
 /*#endregion PORTFOLIO*/
 
 
-/*#region EDUCATION*//**************************EDUCATION SECTION***************************/
+/*#VIDEO EDUCATION*//**************************VIDEO SECTION***************************/
 
-#educationSection
+.myVideo
     {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #DBBD7F;
-    width: 100%;
-    height: 200px;
-    min-height: 900px;
-    margin-top: 36px;
-    overflow: hidden;
+        width:100%;
+        height: auto;
+
     }
 /*#endregion RegionName*/
 
 
-/*#region EXPERIENCE*//**************************EXPERIENCE SECTION***************************/
+/*#region EXPERIENCE*//**************************MAP SECTION***************************/
 
-#experienceSection
-    {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #DBBD7F;
-    width: 100%;
-    height: 200px;
-    min-height: 900px;
-    margin-top: 36px;
+.resp-container {
+    position: relative;
     overflow: hidden;
-    }
-/*#endregion EXPERIENCE*/
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 
 /*#region CONTACT*//**************************CONTACT SECTION***************************/
 
-
+/* 
 #contactSection{
-    display: flex;
+
 }
 
 #skillsSection{
-    display: flex;
+
 }
 
 .skills_left{
@@ -469,20 +350,8 @@ margin-top: var(--margin-top);
 .skills_right{
 background-color: #DBBD7F;
 margin-top: var(--margin-top);
-}
+} */
 
-#contactLinks
-{
-    flex: 25%;
-    background-color:#DABC7F;
-}
-
-#contactMessage
-{
-    flex: 75%;
-    background-color: #203F5C;
-}
-/*#endregion CONTACT*/
 
 
 /*#region FOOTER*//**************************FOOTER SECTION***************************/
@@ -493,17 +362,63 @@ margin-top: var(--margin-top);
 }
 /*#endregion FOOTER*/
 
-
+.footerSection{
+}
 /*#region REUSABLE*//**************************REUSABLE CSS***************************/
 
-.row 
+.sectionMarginPadding
+{
+    padding-top: 5%;
+    height: 900px;
+}
+
+h2{
+    font-size: 1.8em;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    color:#2e2e2e;
+    padding-bottom: 2em;
+}
+
+.content{
+    background-color: #EFEFEF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    color:#2e2e2e;
+    line-height: 1.7em;
+    text-align: justify;
+    padding: 4%;
+}
+
+.section{
+    padding-top: 10%;
+    color: red;
+}
+
+p{
+    margin-bottom: 1em;
+}
+
+.columns
     {
     display: flex;
+    flex-direction: row;
     }
   
-.column50 
+.columnLeft
     {
+        display: flex;
+        flex-direction: row;
     flex: 50%;
+    padding: 0 2.5% 0 0;
+    }
+
+    .columnRight{
+        display: flex;
+        flex-direction: row;
+        flex: 50%;
+        padding: 0 0 0 2.5%;
     }
 
 .margin-left-section{

@@ -1,200 +1,261 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Dinh Portfolio">
+    <meta name="keywords" content="Dinh Portfolio Sheridan">
+   
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/ucq5ngw.css">
-    
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+
+
+   
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <link rel="stylesheet" href="/css/flexslider.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+    <script src="/js/jquery.flexslider.js"></script>
+ 
+ 
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider();
+      });
+    </script>
+
     <title>Dinh's Portfolio</title>
 </head>
-<body class='cursor'>
+<body id='top' class='cursor'>
 
-    <main id='container' class="row">
+<main id='container' class="row">
 
+
+<!-- #region Header --> <!--**********************Header*************************************-->
+
+ <header id="header">
+    <nav id="mainNav">
+        <ul id="menu">
+          <li><a href="#top">Home<span class='slash'>/</span></a></li>
+          <li><a href="#aboutMeSection">About<span class='slash'>/</span></a></li>
+          <li><a href="#columnsSection">Columns<span class='slash'>/</span></a></li>
+          <li><a href="#responsiveImages">Responsive Images<span class='slash'>/</span></a></li>
+          <li><a href="#videoSection">Responsive video<span class='slash'>/</span></a></li>
+          <li><a href="#sliderSection">Slider Section<span class='slash'>/</span></a></li>
+        </ul>
+</nav>
+
+
+  <section id='heroContainer'>  
+
+      <!--**********************NAV BAR*************************************-->
+
+
+
+
+      <!--**********************LOGO*************************************-->
+      <div class="logoContainer">       
+              <div class="logo">
+                      <!-- <img src="./images/Logo.PNG" alt="Tran Logo"> -->
+                      <!-- <img class='logo' src="./images/logo.svg"> -->
+                      <!-- <img class='logoT LogoAnimation' src="./images/Logo_T.png"> -->
+                      <img class='logoImage' src="./images/Logo_All.png" alt="Logo">
+
+              </div>         
     
-        <!--**********************Header*************************************-->
-        <header id="header">
-            <section id='heroContainer'>  
-
-                <!--**********************NAV BAR*************************************-->
-      
-                <nav id="mainNav">
-                                <ul id="menu">
-                                  <li><a href="#home">Home<span class='slash'>/</span></a></li>
-                                  <li><a href="#about">About<span class='slash'>/</span></a></li>
-                                  <li><a href="#projects">Projects<span class='slash'>/</span></a></li>
-                                  <li><a href="#experience">Experience<span class='slash'>/</span></a></li>
-                                  <li><a href="#contact">Contact</a></li>
-                                </ul>
-                </nav>
+          
+              <svg class="dotted-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144" width="144" height="144">
+                 <circle cx="72" cy="72" r="71"></circle>
+              </svg>
+      </div>  
+  </section>
+</header>       
+<!-- #endregion -->
 
 
+<section id="mainContent">
 
-                <!--**********************LOGO*************************************-->
-                <div class="logoContainer">       
-                        <div class="logo">
-                                <!-- <img src="./images/Logo.PNG" alt="Tran Logo"> -->
-                                <!-- <img class='logo' src="./images/logo.svg"> -->
-                                <!-- <img class='logoT LogoAnimation' src="./images/Logo_T.png"> -->
-                                <img class='logo' src="./images/Logo_All.png" alt="Logo">
-
-                        </div>         
-              
-                    
-                        <svg class="dotted-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144" width="144" height="144">
-                           <circle cx="72" cy="72" r="71"></circle>
-                        </svg>
-                </div>
-
-        <!--**********************STARS*************************************-->
-
-                <!-- <svg class="star0 starAnimation animationDelay" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                    <path d="M5.551,5.317A10.543,10.543,0,0,0,8,0a13.682,13.682,0,0,0,2.889,5.317A11.777,11.777,0,0,0,16,8a16.911,16.911,0,0,0-5.111,3.191A13.435,13.435,0,0,0,8,16a9.766,9.766,0,0,0-2.449-4.809A16.815,16.815,0,0,0,0,8,12.4,12.4,0,0,0,5.551,5.317Z" fill="#2a2f36"/>
-                  </svg>
-
-                  <svg class="star1 starAnimation animationDelay fast" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                    <path d="M5.551,5.317A10.543,10.543,0,0,0,8,0a13.682,13.682,0,0,0,2.889,5.317A11.777,11.777,0,0,0,16,8a16.911,16.911,0,0,0-5.111,3.191A13.435,13.435,0,0,0,8,16a9.766,9.766,0,0,0-2.449-4.809A16.815,16.815,0,0,0,0,8,12.4,12.4,0,0,0,5.551,5.317Z" fill="#2a2f36"/>
-                  </svg>
-
-                  <svg class="star2 starAnimation" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                    <g fill="none" stroke-linecap="round">
-                      <path d="M8.326,7.976C11.326,4.976,12,0,12,0s1.334,4.976,4.334,7.976A17.666,17.666,0,0,0,24,12a25.367,25.367,0,0,0-7.666,4.787A20.153,20.153,0,0,0,12,24a14.649,14.649,0,0,0-3.674-7.213C5.326,13.787,0,12,0,12S5.326,10.976,8.326,7.976Z" stroke="none"/>
-                      <path d="M 12.25461673736572 5.769987106323242 C 11.64062118530273 7.02593994140625 10.82261562347412 8.307764053344727 9.740389823913574 9.389989852905273 C 8.496729850769043 10.63365364074707 6.939970016479492 11.5738582611084 5.454887390136719 12.26814746856689 C 6.93547248840332 13.08975982666016 8.499521255493164 14.13203716278076 9.74038028717041 15.37290000915527 C 10.82113265991211 16.45365333557129 11.63841724395752 17.66151237487793 12.25202751159668 18.81479835510254 C 12.95401477813721 17.6667366027832 13.83805274963379 16.4546070098877 14.91977024078369 15.37289047241211 C 16.16176223754883 14.1309061050415 17.63968467712402 13.08687591552734 19.00580787658691 12.26544952392578 C 17.6323413848877 11.57159519195557 16.16191101074219 10.63213539123535 14.91977024078369 9.389989852905273 C 13.83939075469971 8.309613227844238 12.95657825469971 7.023351669311523 12.25461673736572 5.769987106323242 M 12 0 C 12 0 13.33397960662842 4.975780487060547 16.33398056030273 7.975780487060547 C 19.33398056030273 10.97577953338623 24 12 24 12 C 24 12 19.3339900970459 13.78711032867432 16.33398056030273 16.787109375 C 13.33397960662842 19.787109375 11.99997997283936 24 11.99997997283936 24 C 11.99997997283936 24 11.32616996765137 19.787109375 8.326169967651367 16.787109375 C 5.326179504394531 13.78711986541748 0 12.00002956390381 0 12.00002956390381 C 0 12.00002956390381 5.326169967651367 10.97579002380371 8.326169967651367 7.975780487060547 C 11.32616996765137 4.975780487060547 12 0 12 0 Z" stroke="none" fill="#2a2f36"/>
-                    </g>
-                  </svg>
-
-                  <svg class="star3 starAnimation animationDelay fast" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                    <path d="M5.551,5.317A10.543,10.543,0,0,0,8,0a13.682,13.682,0,0,0,2.889,5.317A11.777,11.777,0,0,0,16,8a16.911,16.911,0,0,0-5.111,3.191A13.435,13.435,0,0,0,8,16a9.766,9.766,0,0,0-2.449-4.809A16.815,16.815,0,0,0,0,8,12.4,12.4,0,0,0,5.551,5.317Z" fill="#2a2f36"/>
-                  </svg>
-
-                  
-                  <svg class="star4 starAnimation" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                    <g fill="none" stroke-linecap="round">
-                      <path d="M8.326,7.976C11.326,4.976,12,0,12,0s1.334,4.976,4.334,7.976A17.666,17.666,0,0,0,24,12a25.367,25.367,0,0,0-7.666,4.787A20.153,20.153,0,0,0,12,24a14.649,14.649,0,0,0-3.674-7.213C5.326,13.787,0,12,0,12S5.326,10.976,8.326,7.976Z" stroke="none"/>
-                      <path d="M 12.25461673736572 5.769987106323242 C 11.64062118530273 7.02593994140625 10.82261562347412 8.307764053344727 9.740389823913574 9.389989852905273 C 8.496729850769043 10.63365364074707 6.939970016479492 11.5738582611084 5.454887390136719 12.26814746856689 C 6.93547248840332 13.08975982666016 8.499521255493164 14.13203716278076 9.74038028717041 15.37290000915527 C 10.82113265991211 16.45365333557129 11.63841724395752 17.66151237487793 12.25202751159668 18.81479835510254 C 12.95401477813721 17.6667366027832 13.83805274963379 16.4546070098877 14.91977024078369 15.37289047241211 C 16.16176223754883 14.1309061050415 17.63968467712402 13.08687591552734 19.00580787658691 12.26544952392578 C 17.6323413848877 11.57159519195557 16.16191101074219 10.63213539123535 14.91977024078369 9.389989852905273 C 13.83939075469971 8.309613227844238 12.95657825469971 7.023351669311523 12.25461673736572 5.769987106323242 M 12 0 C 12 0 13.33397960662842 4.975780487060547 16.33398056030273 7.975780487060547 C 19.33398056030273 10.97577953338623 24 12 24 12 C 24 12 19.3339900970459 13.78711032867432 16.33398056030273 16.787109375 C 13.33397960662842 19.787109375 11.99997997283936 24 11.99997997283936 24 C 11.99997997283936 24 11.32616996765137 19.787109375 8.326169967651367 16.787109375 C 5.326179504394531 13.78711986541748 0 12.00002956390381 0 12.00002956390381 C 0 12.00002956390381 5.326169967651367 10.97579002380371 8.326169967651367 7.975780487060547 C 11.32616996765137 4.975780487060547 12 0 12 0 Z" stroke="none" fill="#2a2f36"/>
-                    </g>
-                  </svg>
-                  
-
-                  <svg class="star5 starAnimation animationDelay" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                    <path d="M5.551,5.317A10.543,10.543,0,0,0,8,0a13.682,13.682,0,0,0,2.889,5.317A11.777,11.777,0,0,0,16,8a16.911,16.911,0,0,0-5.111,3.191A13.435,13.435,0,0,0,8,16a9.766,9.766,0,0,0-2.449-4.809A16.815,16.815,0,0,0,0,8,12.4,12.4,0,0,0,5.551,5.317Z" fill="#2a2f36"/>
-                  </svg>
-
-                  <svg class="star6 starAnimation" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <g fill="none" stroke-linecap="round">
-                      <path d="M8.326,7.976C11.326,4.976,12,0,12,0s1.334,4.976,4.334,7.976A17.666,17.666,0,0,0,24,12a25.367,25.367,0,0,0-7.666,4.787A20.153,20.153,0,0,0,12,24a14.649,14.649,0,0,0-3.674-7.213C5.326,13.787,0,12,0,12S5.326,10.976,8.326,7.976Z" stroke="none"/>
-                      <path d="M 12.25461673736572 5.769987106323242 C 11.64062118530273 7.02593994140625 10.82261562347412 8.307764053344727 9.740389823913574 9.389989852905273 C 8.496729850769043 10.63365364074707 6.939970016479492 11.5738582611084 5.454887390136719 12.26814746856689 C 6.93547248840332 13.08975982666016 8.499521255493164 14.13203716278076 9.74038028717041 15.37290000915527 C 10.82113265991211 16.45365333557129 11.63841724395752 17.66151237487793 12.25202751159668 18.81479835510254 C 12.95401477813721 17.6667366027832 13.83805274963379 16.4546070098877 14.91977024078369 15.37289047241211 C 16.16176223754883 14.1309061050415 17.63968467712402 13.08687591552734 19.00580787658691 12.26544952392578 C 17.6323413848877 11.57159519195557 16.16191101074219 10.63213539123535 14.91977024078369 9.389989852905273 C 13.83939075469971 8.309613227844238 12.95657825469971 7.023351669311523 12.25461673736572 5.769987106323242 M 12 0 C 12 0 13.33397960662842 4.975780487060547 16.33398056030273 7.975780487060547 C 19.33398056030273 10.97577953338623 24 12 24 12 C 24 12 19.3339900970459 13.78711032867432 16.33398056030273 16.787109375 C 13.33397960662842 19.787109375 11.99997997283936 24 11.99997997283936 24 C 11.99997997283936 24 11.32616996765137 19.787109375 8.326169967651367 16.787109375 C 5.326179504394531 13.78711986541748 0 12.00002956390381 0 12.00002956390381 C 0 12.00002956390381 5.326169967651367 10.97579002380371 8.326169967651367 7.975780487060547 C 11.32616996765137 4.975780487060547 12 0 12 0 Z" stroke="none" fill="#2a2f36"/>
-                    </g>
-                  </svg>
-
-                  <svg class="star7 starAnimation animationDelay" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                    <path d="M5.551,5.317A10.543,10.543,0,0,0,8,0a13.682,13.682,0,0,0,2.889,5.317A11.777,11.777,0,0,0,16,8a16.911,16.911,0,0,0-5.111,3.191A13.435,13.435,0,0,0,8,16a9.766,9.766,0,0,0-2.449-4.809A16.815,16.815,0,0,0,0,8,12.4,12.4,0,0,0,5.551,5.317Z" fill="#2a2f36"/>
-                  </svg>
-
-                  <svg class="star8 starAnimation" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <g fill="none" stroke-linecap="round">
-                      <path d="M8.326,7.976C11.326,4.976,12,0,12,0s1.334,4.976,4.334,7.976A17.666,17.666,0,0,0,24,12a25.367,25.367,0,0,0-7.666,4.787A20.153,20.153,0,0,0,12,24a14.649,14.649,0,0,0-3.674-7.213C5.326,13.787,0,12,0,12S5.326,10.976,8.326,7.976Z" stroke="none"/>
-                      <path d="M 12.25461673736572 5.769987106323242 C 11.64062118530273 7.02593994140625 10.82261562347412 8.307764053344727 9.740389823913574 9.389989852905273 C 8.496729850769043 10.63365364074707 6.939970016479492 11.5738582611084 5.454887390136719 12.26814746856689 C 6.93547248840332 13.08975982666016 8.499521255493164 14.13203716278076 9.74038028717041 15.37290000915527 C 10.82113265991211 16.45365333557129 11.63841724395752 17.66151237487793 12.25202751159668 18.81479835510254 C 12.95401477813721 17.6667366027832 13.83805274963379 16.4546070098877 14.91977024078369 15.37289047241211 C 16.16176223754883 14.1309061050415 17.63968467712402 13.08687591552734 19.00580787658691 12.26544952392578 C 17.6323413848877 11.57159519195557 16.16191101074219 10.63213539123535 14.91977024078369 9.389989852905273 C 13.83939075469971 8.309613227844238 12.95657825469971 7.023351669311523 12.25461673736572 5.769987106323242 M 12 0 C 12 0 13.33397960662842 4.975780487060547 16.33398056030273 7.975780487060547 C 19.33398056030273 10.97577953338623 24 12 24 12 C 24 12 19.3339900970459 13.78711032867432 16.33398056030273 16.787109375 C 13.33397960662842 19.787109375 11.99997997283936 24 11.99997997283936 24 C 11.99997997283936 24 11.32616996765137 19.787109375 8.326169967651367 16.787109375 C 5.326179504394531 13.78711986541748 0 12.00002956390381 0 12.00002956390381 C 0 12.00002956390381 5.326169967651367 10.97579002380371 8.326169967651367 7.975780487060547 C 11.32616996765137 4.975780487060547 12 0 12 0 Z" stroke="none" fill="#000"/>
-                    </g>
-                  </svg>
-
-                  <svg class="star9 starAnimation" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <g fill="none" stroke-linecap="round">
-                      <path d="M8.326,7.976C11.326,4.976,12,0,12,0s1.334,4.976,4.334,7.976A17.666,17.666,0,0,0,24,12a25.367,25.367,0,0,0-7.666,4.787A20.153,20.153,0,0,0,12,24a14.649,14.649,0,0,0-3.674-7.213C5.326,13.787,0,12,0,12S5.326,10.976,8.326,7.976Z" stroke="none"/>
-                      <path d="M 12.25461673736572 5.769987106323242 C 11.64062118530273 7.02593994140625 10.82261562347412 8.307764053344727 9.740389823913574 9.389989852905273 C 8.496729850769043 10.63365364074707 6.939970016479492 11.5738582611084 5.454887390136719 12.26814746856689 C 6.93547248840332 13.08975982666016 8.499521255493164 14.13203716278076 9.74038028717041 15.37290000915527 C 10.82113265991211 16.45365333557129 11.63841724395752 17.66151237487793 12.25202751159668 18.81479835510254 C 12.95401477813721 17.6667366027832 13.83805274963379 16.4546070098877 14.91977024078369 15.37289047241211 C 16.16176223754883 14.1309061050415 17.63968467712402 13.08687591552734 19.00580787658691 12.26544952392578 C 17.6323413848877 11.57159519195557 16.16191101074219 10.63213539123535 14.91977024078369 9.389989852905273 C 13.83939075469971 8.309613227844238 12.95657825469971 7.023351669311523 12.25461673736572 5.769987106323242 M 12 0 C 12 0 13.33397960662842 4.975780487060547 16.33398056030273 7.975780487060547 C 19.33398056030273 10.97577953338623 24 12 24 12 C 24 12 19.3339900970459 13.78711032867432 16.33398056030273 16.787109375 C 13.33397960662842 19.787109375 11.99997997283936 24 11.99997997283936 24 C 11.99997997283936 24 11.32616996765137 19.787109375 8.326169967651367 16.787109375 C 5.326179504394531 13.78711986541748 0 12.00002956390381 0 12.00002956390381 C 0 12.00002956390381 5.326169967651367 10.97579002380371 8.326169967651367 7.975780487060547 C 11.32616996765137 4.975780487060547 12 0 12 0 Z" stroke="none" fill="#dbbd7f"/>
-                    </g>
-                  </svg> -->
-
-
-                <!--**********************BIG CIRCLE*************************************-->
-                <!-- <div class="big-circle">
-                        <img src="images/big-circle.svg" alt="circle spinner">
-                </div>
- -->
-
-            
-            </section>
-        </header>
-        <!--**********************END Header*************************************-->
-
-
-
-
-        <section id="mainContent">
-        <!--**********************ABOUT ME*************************************-->
-
-        <section id="aboutMeSection" class="row">
-            <section id="aboutMe_left" class="column50 margin-left-section">
-
+<!-- #region ABOUT ME --> <!--**********************ABOUT ME*************************************-->
+        <section id="aboutMeSection" class='section'>
+  
                 <h2>about me</h2>
-                <p class='aboutMe_text'>Hello! I’m Meagan Fisher. I create impactful websites for people with good ideas.As a rare designer-developer hybrid, I am passionate and knowledgeable about both the visual and technical aspects of creating a website. My mission is to help bring more beauty, creativity, and good ideas into the world through web design. </p>                 
-                <!-- <img class='aboutMeImage' src="images/description-moon-big@2x.png"> -->
-            </section>
-     
+                <section class='content'>
+                  <p><em><strong>Hello! I’m Dinh Tran.</strong></em></p>       
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur architecto alias, ex velit sit perferendis eligendi possimus quam ab dolores exercitationem enim in quae debitis soluta! Iste, eaque nostrum. Alias consectetur sapiente amet ipsa harum molestiae! Voluptas laudantium quo possimus vitae earum numquam, blanditiis asperiores, facilis deleniti, est ab nulla ad odio fugiat quod. Reprehenderit, ipsum assumenda commodi molestiae quam labore nemo, repellat adipisci quasi optio tempore ratione quidem impedit voluptatibus corporis magnam voluptatem dignissimos harum, earum sapiente non aut! Consequatur sit dicta ratione consectetur dolor eos id quos velit odit ipsum! Eius reiciendis, unde facilis recusandae magnam beatae odio!</p>          
+                </section>
+                <!-- <img class='aboutMeImage' src="images/description-moon-big@2x.png"> --> 
             <!-- <section class="aboutMe_HeadShot column50 margin-right-section"></section> -->
         </section> 
-        
-        
+      
+<!-- #endregion -->
 
-        <!- -**********************PORTFOLIO WORK*************************************- ->
-       
-        <section id="porfolioSection">
-           <h1>Projects</h1> 
+
+
+<!-- #region section with Columns -->
+ <section id="columnsSection" class='section'>
+      <h2>Columns</h2> 
+        <section class='content columns'>
+            <section class='left-column columnLeft'>
+                  <p>LEFT, ipsum dolor sit amet consectetur adipisicing elit. Est consequatur recusandae cumque mollitia expedita tempora pariatur reprehenderit ipsum culpa? Fuga maiores unde quibusdam blanditiis dolor hic soluta nobis laboriosam eos mollitia facilis eius vel, atque voluptatem deleniti impedit veritatis repellat doloribus veniam dignissimos minus libero animi commodi. Officia excepturi at beatae quae tempore ea reprehenderit, laborum perspiciatis ipsam similique velit, accusamus quis? Aliquid, ipsam iure voluptatum cupiditate saepe reiciendis iste sapiente est mollitia deserunt nobis maiores facilis at. Quia aperiam eaque labore quibusdam beatae ex sed, et deserunt, reprehenderit recusandae modi vel? Officiis eum quisquam dolore commodi quia recusandae odit.</p>
+            </section>
+
+            <section class='right-column columnRight'>
+                <p>RIGHT ipsum dolor sit amet consectetur, adipisicing elit. Fugit magnam quod molestiae consequuntur eum, porro maiores, exercitationem reiciendis doloremque vitae distinctio quaerat impedit sunt id! Placeat doloribus obcaecati perferendis possimus inventore aperiam, quaerat, aliquid optio, sint corporis quia! Sequi velit suscipit in dolorem est earum soluta eos odit eaque tempora!</p>
+            </section>
+        </section>
+ </section>
+<!-- #endregion -->
+
+
+
+<!-- #region Responsive Images --> <!--**********************Responsive Images*************************************-->
+        <section id="responsiveImages" class='section'>
+          <h2>Responsive Images</h2>
+
+          <section class='content responsiveImages'>
+              <div id='imgRow1' class='images'>
+                <img src="/images/portfolio Images/img1.jpeg" alt="">
+                <img src="/images/portfolio Images/img2.jpeg" alt="">
+                <img src="/images/portfolio Images/img3.jpeg" alt="">
+              </div>
+
+              <div id='imgRow2' class='images'>
+                  <img src="/images/portfolio Images/img4.jpeg" alt="">
+                  <img src="/images/portfolio Images/img5.jpeg" alt="">
+                  <img src="/images/portfolio Images/img6.jpeg" alt="">
+                </div>
+              <div id='imgRow2'></div>
+          </section>
+
         </section>
 
-
-        
-        <!- -**********************EDUCATION*************************************- ->
-
-        <section id="educationSection">
-            <h1>Education</h1>
-            <img src="images/education_image.png" alt="">
-        </section>
+<!-- #endregion -->
 
 
 
-        <!- -**********************EXPERIENCE*************************************- ->
+<!-- #region Video Responsive --> <!--**********************Video Responsive*************************************-->
 
-        <section id="experienceSection">
-            <h1>Experience</h1>
-            <img src="images/education_image.png" alt="">
-        </section>
-
-
-
-        <!- -**********************SKILLS*************************************- ->
-
-        <section id="skillsSection" class="">
-            <section class="skills_left column50" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iste fugit odio fugiat, unde aliquam placeat perspiciatis quae dolorum error, doloremque aliquid odit nemo minus aut maxime impedit alias voluptatem vero deleniti! Repudiandae molestias nobis odio aliquam eligendi rerum exercitationem soluta aspernatur dignissimos quos hic nostrum, maxime pariatur obcaecati autem aliquid error alias minus, sapiente sunt ad! Similique doloremque error dolor atque neque, non omnis consequuntur illum ratione est! Quis quasi distinctio reiciendis tempora dolore facere rem voluptatibus minima. In perferendis natus ad. Molestias facilis, odio tempora distinctio, consectetur repudiandae inventore officiis eligendi illum atque voluptate! Quisquam amet blanditiis aperiam.</section>
-            <section class="skills_right column50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur maiores illo quia harum perferendis. Eligendi blanditiis maxime iure saepe sequi autem deserunt reprehenderit, id, quibusdam doloribus esse voluptate perferendis. Ipsum amet nostrum, cupiditate ullam facere dolores ipsa consequatur aliquam ad veritatis sit dolor sed cumque ratione. In earum pariatur sequi quidem perferendis itaque magnam qui ipsa, dicta eligendi iure alias at amet, doloribus, libero sunt! Modi veniam animi perspiciatis hic incidunt maiores minima odit est iste ea voluptatum molestias neque quisquam eaque quaerat, aperiam fugit. Placeat, ullam dolorem debitis autem aliquid aperiam repudiandae! Distinctio modi inventore iure ducimus, minima rem!</section>
-        </section>
-
-
-        <!- -**********************Contact*************************************- ->
-
-        <section id="contactSection">
-            <div id="contactLinks" class='margin-left-section'>
-            <h1>My contact links</h1>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, perferendis necessitatibus. Voluptates aspernatur ratione voluptatibus error odit voluptatum recusandae. Quibusdam facilis voluptatem reiciendis quae itaque. Ullam dolore laborum quia architecto!
-            </div>
+<section id="videoSection" class='section'>
+    <h2>responsive video</h2> 
+      <section class='content'>
+          <video autoplay muted loop class="myVideo">
+              <source src="images/video.mp4" type="video/mp4">
+              <source src="images/video.webm" type="video/webm">
+              <source src="images/video.ogv" type="video/ogv">
+              Your browser doesn't support video
+            </video> 
             
-            <div id="contactMessage" class='margin-right-section'>
-            Contact contact contactMessag
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat repudiandae recusandae fuga adipisci blanditiis laboriosam quaerat quae maxime harum facilis! 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt necessitatibus reiciendis, deserunt labore eaque laudantium est a. Eveniet placeat repellat dolore id dolorum nisi voluptate quae, beatae dolores aperiam animi eligendi in velit earum quia error distinctio quibusdam ab autem facere dignissimos reiciendis recusandae. Accusamus in adipisci perferendis. Reprehenderit voluptatibus impedit sit at ratione dolorum nemo ad, totam nihil possimus exercitationem saepe ut recusandae quis sapiente similique hic, dicta officiis consequuntur cum quod id. Consequatur sequi laboriosam iure. Ut aut incidunt dolorem nobis est. Quasi sapiente beatae pariatur culpa ratione architecto est fuga aliquam ipsam illum nesciunt corporis nulla dolorem earum quis, inventore doloremque voluptates temporibus excepturi. Sapiente quos ex porro iusto minima eos nisi nemo, atque adipisci dolorem dolore quis incidunt tempora iste ullam possimus! A, nulla et. Praesentium sit sapiente, doloribus voluptate pariatur, dicta harum numquam quia id blanditiis rerum ullam? Maiores nostrum assumenda nemo nam velit, consectetur omnis. Odio harum recusandae incidunt commodi reiciendis laboriosam officiis natus saepe explicabo magnam, ipsum aperiam blanditiis est tempore itaque provident? Aut qui expedita reprehenderit libero, ducimus quaerat labore similique quisquam harum voluptatum quod? Cupiditate quo nihil, nam eaque illum minima minus, culpa dolores aperiam eos fugiat rem atque voluptatum? Ex?
-            </div>
-        </section>
-
-        <!- -**********************Footer*************************************- ->
-        <footer id="mainFooter">
-            <h1>Footer</h1>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fuga libero blanditiis distinctio cupiditate odio, ad iure nobis corporis et dolore ipsum itaque, rem optio voluptatum quidem debitis quasi assumenda suscipit ullam recusandae temporibus! Rerum laudantium eveniet eius tempora, voluptate deserunt necessitatibus autem fugit similique quaerat accusantium illum provident sunt quisquam praesentium impedit earum porro quo dolore ipsam incidunt ducimus! Voluptatum eum ipsam quaerat suscipit numquam delectus culpa accusantium doloremque illo ex, ullam ratione, eveniet odio exercitationem expedita repellendus nemo doloribus consequatur porro eaque. Ipsa nisi sit facere neque consectetur. Nobis sint explicabo repudiandae, consectetur, quod dignissimos quos, magnam exercitationem laboriosam molestias recusandae dolore quae vitae aliquam necessitatibus. Rerum atque odit similique a laboriosam quas numquam, cupiditate ullam exercitationem earum autem suscipit, ipsum sapiente perspiciatis deleniti. Molestiae tempore ipsum eius corporis explicabo expedita saepe doloribus placeat facilis, porro fuga perferendis, quae debitis commodi ratione asperiores deserunt velit? Maxime, corporis quos blanditiis recusandae, quae facere aspernatur debitis provident veniam dolores natus, perspiciatis unde velit fugit? Voluptatibus assumenda fuga alias, eius magnam est exercitationem placeat cum aliquam unde aut, possimus labore quaerat delectus rem odit ipsum iusto. Aperiam quidem dolorem officia recusandae facilis, quod, dolorum inventore, consectetur nesciunt minima libero? Ut, possimus accusamus! Dolores perspiciatis eius facilis adipisci quas nesciunt beatae aperiam error distinctio esse corrupti atque doloribus iste aspernatur aliquam numquam explicabo aut, non blanditiis accusantium quae iure unde ut quo. In rerum aliquid, illum omnis dignissimos iusto voluptatum nihil, tenetur distinctio vel, dolorem explicabo ut! Dignissimos autem nihil fuga non totam. Aut, magnam soluta! Reprehenderit accusantium magnam nam quo repudiandae facere eos id nihil quae, minima illo possimus quibusdam soluta optio recusandae dolorem, officia enim cupiditate vel ullam in aliquam dolore? Rem ab dignissimos deserunt voluptates quasi nam ducimus labore architecto cum quis distinctio eveniet sit quam consequuntur iste animi, ut explicabo molestiae reprehenderit in! Sit harum consectetur quas explicabo tenetur dolore, nemo necessitatibus atque ratione expedita. Labore odio quis laboriosam officiis et laudantium numquam illum saepe voluptatibus maxime voluptatem praesentium aperiam, obcaecati qui quibusdam, dolor similique eius delectus deleniti molestiae accusamus. Inventore consequuntur consequatur nam voluptates porro in accusamus architecto? Modi quod eum nemo perferendis nisi sunt ipsum. Itaque similique delectus magnam aliquid eos iste repellat repudiandae, pariatur minus reprehenderit consequatur a commodi sed nostrum ad. Repellat asperiores ducimus incidunt doloremque quos sit a enim, inventore at, temporibus fugit. Deserunt dolorum adipisci incidunt? Amet quo accusantium illum quibusdam suscipit, sit in earum maxime nostrum ad. Eius, libero! Soluta praesentium possimus maxime minima in deserunt magni corporis autem molestias doloremque, atque ullam quos asperiores iure odit odio quam amet laborum ea, saepe consectetur perspiciatis velit veritatis ipsam? Soluta accusantium ipsa possimus ea culpa ullam provident iusto. Inventore doloremque quam temporibus, porro esse harum officia sit modi quis fugiat id obcaecati suscipit nisi laudantium culpa placeat et velit dolorem sint rem eligendi animi cum aliquam voluptas. Molestiae veniam error illum aperiam dolorum. Inventore nobis laudantium in. Labore iste non commodi? A harum neque tempora laudantium impedit placeat porro facilis soluta eos.
-        </footer>
+            
       </section>
+</section>
+<!-- #endregion -->
+   
+
+        
+<!-- #region Map --><!--**********************Map*************************************-->
+  <section id="mapSection" class='section'>
+      <h2>Responsive Map</h2>
+      <section class='content'>
+          <div class='resp-container'>
+              <iframe class="resp-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92471.74095046883!2d-79.71684124179689!3d43.591092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b472bb0426f45%3A0xdb67ca8a29007a66!2sSheridan+College+-+Hazel+McCallion+Campus!5e0!3m2!1sen!2sca!4v1564781151692!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </section>
+  </section>
+<!-- #endregion -->
+    
+   
+<!-- #region slider --> <!--**********************slider*************************************-->
+<section id="sliderSection" class='section'>
+  
+    <h2>slider</h2>
+    <section class='content'>
+  
+        <div class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="/images/portfolio Images/img1.jpeg" />
+              </li>
+              <li>
+                <img src="/images/portfolio Images/img2.jpeg" />
+              </li>
+              <li>
+                <img src="/images/portfolio Images/img3.jpeg" />
+              </li>
+            </ul>
+          </div>
+
+    </section>
+    <!-- <img class='aboutMeImage' src="images/description-moon-big@2x.png"> --> 
+<!-- <section class="aboutMe_HeadShot column50 margin-right-section"></section> -->
+</section> 
+
+<!-- #endregion -->
+
+
+  
+
+<!-- #region FOOTER --> <!--**********************Footer*************************************-->
+       
+<footer id="mainFooter" class='section'>
+    <section class='content'>
+    <span>&copy;Dinh Tran</span>
+    </section>
+</footer>
+ <!-- #endregion -->
+        
+
+</section>
     </main>
+
+
 </body>
 </html>
+
+
+
+
+
+
+<!--**********************Scripts*************************************-->
+
+
+
+
+<script>
+    $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+    $('html, body').animate({
+    scrollTop: target.offset().top
+    }, 700);
+    return false;
+    }
+    }
+    });
+    });
+  </script>
+
+
+
+<script>
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+  });
+</script>
