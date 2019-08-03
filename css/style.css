@@ -193,7 +193,7 @@
 
 .logoAreaContainer{
     /* position: absolute; */
-    background-color: blue;
+    /* background-color: blue; */
     width: 100%;
     height: 100%;
     z-index: 112;
@@ -201,7 +201,7 @@
 
 .logoImage{
     position: absolute;
-    background-color: green;
+    /* background-color: green; */
     width: 20vw;
     height: 20vw;
     top: 50%;
@@ -466,24 +466,29 @@ p{
   
 .columnLeft
     {
-        display: flex;
-        flex-direction: row;
+        /* display: flex;
+        flex-direction: row; */
     flex: 50%;
     padding: 0 2.5% 0 0;
     }
 
     .columnRight{
-        display: flex;
-        flex-direction: row;
+
         flex: 50%;
         padding: 0 0 0 2.5%;
     }
 
-.margin-left-section{
+/* .margin-left-section{
     margin: var(--margin-top) calc(var(--margin-top)/2) 0% 0;
 }
 
 .margin-right-section{
     margin: var(--margin-top) 0% 0% calc(var(--margin-top)/2);
-}
+} */
 /*#endregion REUSABLE*/
+
+@media only screen and (max-width: 768px) {
+    h2{
+        color: green;
+    }
+}
