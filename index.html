@@ -29,7 +29,12 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
     <script src="/js/jquery.flexslider.js"></script>
  
- 
+
+    <link rel="stylesheet" href="/css/slicknav.css" />
+    <script type="text/javascript" src="/js/jquery.slicknav.min.js"></script>
+
+
+
     <script type="text/javascript" charset="utf-8">
       $(window).load(function() {
         $('.flexslider').flexslider();
@@ -69,7 +74,7 @@
        
         <div class="logoAreaContainer">
 
-                      <img class='logoImage' src="./images/Logo_All.png" alt="Logo">
+              <img class='logoImage' src="./images/Logo_All.png" alt="Logo">
           
               <div class='svg-container'>
                 <svg class="dotted-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144" width="144" height="144">
@@ -125,7 +130,7 @@
         <section id="responsiveImages" class='section'>
           <h2>Responsive Images</h2>
 
-          <section class='content responsiveImages'>
+          <section class='content_responsiveImages content'>
               <div id='imgRow1' class='images'>
                 <img class='portfolio' src="/images/portfolio Images/img1.jpeg" alt="">
                 <img class='portfolio' src="/images/portfolio Images/img2.jpeg" alt="">
@@ -138,6 +143,18 @@
                   <img class='portfolio' src="/images/portfolio Images/img6.jpeg" alt="">
                 </div>
               <div id='imgRow2'></div>
+          </section>
+
+          
+          <section class='content_imageLinks content'>
+             <ul>
+                <li><a  src="/images/portfolio Images/img1.jpeg">Link image 1</a></li>
+                <li><a  src="/images/portfolio Images/img2.jpeg">Link image 2</a></li>
+                <li><a  src="/images/portfolio Images/img3.jpeg">Link image 3</a></li>
+                <li><a  src="/images/portfolio Images/img4.jpeg">Link image 4</a></li>
+                <li><a  src="/images/portfolio Images/img5.jpeg">Link image 5</a></li>
+                <li><a  src="/images/portfolio Images/img6.jpeg">Link image 6</a></li>
+             </ul>
           </section>
 
         </section>
@@ -260,3 +277,25 @@
     });
   });
 </script>
+
+
+<script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+<!-- <script type="text/javascript">
+  jQuery(document).ready(function($) {
+  
+    // Hook up the current state to the nav bar
+    $('#navBar').onePageNav();
+    
+  });
+  </script> -->
+
+  <script>
+
+    
+$(function(){
+        $('#menu').slicknav({
+            label: ""
+        });
+    });
+
+  </script>
