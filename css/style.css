@@ -52,21 +52,6 @@
     }
 
 
-#heroContainer
-    {
-    /* background: url("/images/main-banner-bg@2x.jpg") center; */
-    background-color: #ffde1d;
-    background: -webkit-radial-gradient(#ffde1d,#ffd001);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-    }
 
 .responsiveImages{
     display: flex;
@@ -75,7 +60,7 @@
     
 }
 
-img{
+.portfolio{
     width: 18vw;
     height: 18vw;
     object-fit: cover;
@@ -173,26 +158,106 @@ img{
     animation-duration: 300ms;
 }
 
+#heroContainer
+    {
+    /* background: url("/images/main-banner-bg@2x.jpg") center; */
+    background-color: #ffde1d;
+    background: -webkit-radial-gradient(#ffde1d,#ffd001);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow: hidden;
+    position: relative;
+    }
 
 .logoContainer{
-    width: auto;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     /* display: flex; */
     /* border: dashed red; */
     /* position: absolute; */
     /* top: 10%; */
     /* justify-content: center;
     align-items: center; */
-    position: relative;
+    position: absolute;
+    
+    /* top: 0;
+    left: 0; */
+    background-color: red;
+    z-index: 1;
 }
 
-.logo img{
-    width: auto;
-    height: 100%;
+
+.logoImage{
     position: absolute;
+    background-color: green;
+    width: 20%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  
+}
+
+
+.svg-container
+{
+    position: absolute;
+    /* margin: 0 auto; */
+    /* top: 0%;
+    left: 0%;  */
+    /* width: 50%;
+    height: 50%; */
+    z-index: 28;
+    background-color: grey;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.dotted-circle {
+    fill: none;
+    stroke: #faf7eb;
+    stroke-linecap: round;
+    stroke-width: 2.5px;
+    stroke-dasharray: 0 13.5;
+    animation: small-spin 60s linear infinite;
+    /* height: 87%; */
+    width: auto;
+    /* position: relative; */
+    display: block;
+    margin: 0 auto;
+
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+ 
+/* .logo{
+    position: absolute;
+     top: 50%;
+    left: -50%; 
+    z-index: 5;
+    width: auto;
+    height: 90%;
+    background-color: grey;
+}  */
+
+
+
+.logo img{
+    /* width: auto;
+    height: 100%; */
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%;
+     */
+    /* transform: translate(-50%, -50%);  */
 
     /* animation-name: example; */
     /* animation: example 400ms infinite alternate; */
@@ -215,24 +280,7 @@ img{
   }
 
 
-.dotted-circle {
-    fill: none;
-    stroke: #faf7eb;
-    stroke-linecap: round;
-    stroke-width: 2.5px;
-    stroke-dasharray: 0 13.5;
-    animation: small-spin 60s linear infinite;
-    height: 87%;
-    width: auto;
-    position: absolute;
-    /* margin: 0 auto; */
-    top: 13%;
-    left: 0%;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 
-}
 
 @keyframes small-spin {
     0% {
