@@ -1,0 +1,552 @@
+:root {
+    --margin-top: 2%;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+#hamburger {
+    display: none;
+}
+
+#menu {
+    white-space: nowrap;
+}
+.image-container {
+    background-color: red;
+    height: 200px;
+}
+#my-container {
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    width: 100%;
+    overflow: hidden;
+}
+#mainContent {
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*#region HERO SECTOIN*/ /**************************Hero Section ***************************/
+
+#header {
+    width: 100%;
+    height: 600px;
+    min-height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.responsiveImages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content_imageLinks {
+    display: none;
+}
+
+.portfolio {
+    width: 18vw;
+    height: 18vw;
+    object-fit: cover;
+    margin: 2%;
+}
+
+.flexslider .slides img {
+    /* max-height: 200px; maximum height for all slides */
+    width: auto; /*proper aspect ratio of images*/
+    max-width: 100%; /*maximum width for all slides*/
+    margin: 0 auto; /*centering images in the container*/
+}
+
+#imgRow2,
+#imgRow1 {
+    width: 100%;
+    display: flex;
+}
+
+#mainNav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    z-index: 40;
+    overflow: hidden;
+    background-color: rgb(252, 214, 27);
+    box-shadow: 0 6px 7px -8px rgba(7, 7, 7, 0.5);
+}
+
+#menu {
+    width: 100%;
+    /* background-color: rgb(233, 231, 231); */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 70px;
+    align-items: center;
+}
+
+.slash {
+    display: inline-block;
+    margin: 0 20px 0 20px;
+    color: #fc589f;
+}
+
+a {
+    color: #202020;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    /* border: solid 1px green; */
+}
+
+a:hover {
+    color: #7f8181;
+}
+
+@font-face {
+    font-family: "flexslider-icon";
+    /*THIS-->*/
+    src: url("../fonts/flexslider-icon.eot");
+    /**MIGHT HAVE TO BE THIS- ../ TO GO OUT OF THE CSS FOLDER - THEN INTO A FONTS FOLDER*/
+    src: url("../fonts/flexslider-icon.eot");
+    src: url("../fonts/flexslider-icon.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/flexslider-icon.woff") format("woff"),
+        url("../fonts/flexslider-icon.ttf") format("truetype"),
+        url("../fonts/flexslider-icon.svg#flexslider-icon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.starAnimation {
+    animation: blink 700ms infinite ease-out;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fast {
+    animation-duration: 300ms;
+}
+
+#heroContainer {
+    background-color: #ffde1d;
+    background: -webkit-radial-gradient(#ffde1d, #ffd001);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.logoContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.logoAreaContainer {
+    width: 100%;
+    height: 100%;
+    z-index: 112;
+}
+
+.logoImage {
+    position: absolute;
+    /* background-color: green; */
+    width: 20vw;
+    height: 20vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.svg-container {
+    position: absolute;
+    /* width: 35%;
+    height: 35%; */
+    z-index: 20;
+    /* background-color: grey; */
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35vw;
+    height: 35vw;
+}
+
+.dotted-circle {
+    fill: none;
+    stroke: #faf7eb;
+    stroke-linecap: round;
+    stroke-width: 2.5px;
+    stroke-dasharray: 0 13.5;
+    animation: small-spin 60s linear infinite;
+    /* position: relative; */
+    display: block;
+    z-index: 21;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.logo .logoT {
+    /* background-color: GREY; */
+    z-index: 14;
+    width: 70%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+}
+
+@keyframes example {
+    from {
+        background-color: #ebdca4;
+    }
+    to {
+        background-color: rgb(240, 189, 4);
+    }
+}
+
+@keyframes small-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.logo .outer-logo-circle {
+    fill: #dbbd7f;
+}
+.logo .owl-face {
+    fill: #faf7eb;
+}
+.logo .owl-face-outline {
+    fill: #214261;
+}
+
+.big-circle {
+    position: absolute;
+    width: 70%;
+}
+
+.big-circle img {
+    animation-name: big-spin;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    width: 100%;
+    height: auto;
+}
+
+@keyframes big-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*#endregion HERO */
+
+/*#region ABOUT ME*/ /**************************ABOUT ME SECTION ***************************/
+#aboutMeSection {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+/*#endregion ABOUT ME*/
+
+/*#region PORTFOLIO*/ /**************************Responsive Images SECTION***************************/
+.content_responsiveImages {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    width: 100%;
+    background-color: red;
+}
+/*#endregion PORTFOLIO*/
+
+/*#region VIDEO*/ /**************************VIDEO SECTION***************************/
+
+.myVideo {
+    width: 100%;
+    height: auto;
+}
+/*#endregion Video*/
+
+/*#region EXPERIENCE*/ /**************************MAP SECTION***************************/
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*#endregion Map Section*/
+
+/*#region FOOTER*/ /**************************FOOTER SECTION***************************/
+
+#mainFooter {
+    margin-top: var(--margin-top);
+}
+
+.footerSection {
+}
+/*#endregion FOOTER*/
+
+/*#region REUSABLE*/ /**************************REUSABLE CSS***************************/
+
+.sectionMarginPadding {
+    padding-top: 5%;
+    height: 900px;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #2e2e2e;
+    margin-bottom: 0.5em;
+}
+h3 {
+    font-size: 1.3em;
+    line-height: 2em;
+    font-family: "Roboto", sans-serif;
+    color: #2e2e2e;
+    margin-bottom: 2em;
+}
+
+h4 {
+    padding-bottom: 3%;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2vw;
+    color: #2e2e2e;
+    line-height: 1.7em;
+    text-align: justify;
+}
+.content {
+    background-color: #efefef;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    color: #2e2e2e;
+    line-height: 1.7em;
+    text-align: justify;
+    padding: 4%;
+}
+
+.section {
+    padding-top: 4vw;
+    width: 100%;
+    color: blue;
+}
+
+p {
+    margin-bottom: 1vw;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.columnLeft {
+    /* display: flex;
+        flex-direction: row; */
+    flex: 50%;
+    padding: 0 2.5% 0 0;
+}
+
+.columnRight {
+    flex: 50%;
+    padding: 0 0 0 2.5%;
+}
+
+.slicknav_menu {
+    display: none;
+}
+
+/*#endregion Reusable*/
+
+/**********************************To TOP BUTTON***************************************/
+#btnUp {
+    font-size: 3em;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    color: rgb(53, 53, 53);
+    z-index: 35;
+}
+
+/*#region REUSABLE*/ /**********************************MEDIA QUERIES***************************************/
+
+@media only screen and (max-width: 768px) {
+    .main {
+        margin-top: 0; /* Add a top margin to avoid content overlay */
+    }
+
+    #hamburger {
+        display: inline-block;
+    }
+
+    /* #hamburger li a{
+        color: red;
+    } */
+
+    #mainContent {
+        width: 95%;
+    }
+
+    #heroContainer {
+        width: 100%;
+        height: 50%;
+    }
+
+    .slicknav_menu {
+        display: inline-block;
+        position: fixed;
+        top: 4%;
+        right: 4%;
+        z-index: 44;
+    }
+
+    .logoImage {
+        width: 35vh;
+        height: 35vh;
+    }
+
+    #mainNav {
+        display: none;
+        background-color: none;
+    }
+
+    a {
+        color: #0c73e9;
+        text-decoration: underline;
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 1em;
+        letter-spacing: 0.2em;
+        display: inline-block;
+    }
+
+    .content_responsiveImages {
+        display: none;
+    }
+
+    .content_imageLinks {
+        display: inline-block;
+        color: rgb(153, 152, 152);
+        padding: 60px;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    .content {
+        font-size: 1.2em;
+        width: 90%;
+    }
+
+    .svg-container {
+        width: 61vh;
+        height: 61vh;
+    }
+
+    .columns {
+        display: block;
+    }
+
+    .columnLeft {
+        padding: 0;
+    }
+
+    .columnRight {
+        padding: 0;
+    }
+
+    .section {
+        padding-top: 8%;
+    }
+
+    .content {
+        padding: 2%;
+        width: 100%;
+    }
+
+    h2 {
+        padding-bottom: 1em;
+    }
+
+    #heroContainer {
+        width: 100%;
+        height: 100%;
+    }
+
+    #header {
+        width: 100%;
+        height: auto;
+        min-height: 50%;
+        box-sizing: border-box;
+        display: relative;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+}
+/*#endregion Reusable*/
