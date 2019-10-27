@@ -1,4 +1,5 @@
 //**************************MOBILE***********************************************
+
 :root {
         --margin-top: 2%;
 }
@@ -161,12 +162,6 @@ p {
         margin: 0 auto; /*centering images in the container*/
 }
 
-#imgRow2,
-#imgRow1 {
-        width: 100%;
-        display: flex;
-}
-
 #menu {
         width: 100%;
         display: flex;
@@ -176,18 +171,10 @@ p {
         align-items: center;
 }
 
-.slash {
-        display: inline-block;
-        margin: 0 20px 0 20px;
-        color: #fc589f;
-}
-
 a {
         color: #202020;
         text-decoration: none;
         font-family: "Roboto", sans-serif;
-        text-transform: uppercase;
-        font-weight: bolder;
         font-size: 1em;
         letter-spacing: 0.2em;
 }
@@ -210,27 +197,8 @@ a:hover {
         font-style: normal;
 }
 
-.starAnimation {
-        animation: blink 700ms infinite ease-out;
-        animation-direction: alternate;
-}
-
-@keyframes blink {
-        0% {
-                opacity: 0.2;
-        }
-        100% {
-                opacity: 1;
-        }
-}
-
-.fast {
-        animation-duration: 300ms;
-}
-
 #heroContainer {
         background-color: #ffde1d;
-        background: -webkit-radial-gradient(#ffde1d, #ffd001);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -310,9 +278,128 @@ a:hover {
                 --margin-top: 2%;
         }
 
-        .sectionMarginPadding {
-                padding-top: 5%;
-                height: 900px;
+        .container {
+                max-width: 100%;
+        }
+
+        #my-container {
+                background-size: cover;
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                #header {
+                        width: 100%;
+                        height: 600px;
+                        min-height: 100%;
+                        box-sizing: border-box;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+
+                        #mainNav {
+                                display: flex;
+                                width: 100%;
+                                position: fixed;
+                                top: 0%;
+                                z-index: 40;
+                                overflow: hidden;
+                                background-color: transparent;
+                                #menu {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        margin: 0 auto;
+                                        height: 70px;
+                                        align-items: center;
+                                        white-space: nowrap;
+
+                                        li {
+                                                a {
+                                                        color: #fffefe;
+                                                        text-decoration: none;
+                                                        font-family: "Roboto",
+                                                                sans-serif;
+                                                        // text-transform: uppercase;
+                                                        // font-weight: bolder;
+                                                        font-size: 1vw;
+                                                        letter-spacing: 0.2em;
+                                                        margin-left: 5vw;
+                                                }
+                                                a:hover {
+                                                        color: #7f8181;
+                                                }
+                                        }
+                                }
+
+                                #hamburger {
+                                        display: none;
+                                }
+                        }
+
+                        #heroContainer {
+                                background-color: white;
+                                width: 100%;
+                                height: 100%;
+                                overflow: hidden;
+                                position: relative;
+
+                                #video_hero {
+                                        width: 100%;
+                                }
+
+                                #video_overlay {
+                                        background-color: black;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        opacity: 0.3;
+                                        z-index: 5;
+                                        width: 100%;
+                                        height: 100%;
+                                }
+                        }
+                } //end header
+
+                #mainContent {
+                        width: 70%;
+                        flex-direction: column;
+                        align-items: center;
+
+                        #images-section {
+                        }
+                        #video-section {
+                        }
+
+                        #map-section {
+                                .resp-container {
+                                        position: relative;
+                                        overflow: hidden;
+                                        padding-top: 56.25%;
+                                }
+
+                                .resp-iframe {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                }
+                        }
+                        #slider-section {
+                                .flexslider .slides img {
+                                        width: auto;
+                                        max-width: 100%;
+                                        margin: 0 auto;
+                                }
+                        }
+
+                        #mainFooter {
+                                margin-top: var(--margin-top);
+                        }
+                } //end mainContent
         }
 
         h2 {
@@ -342,6 +429,7 @@ a:hover {
                 line-height: 2.5vw;
                 text-align: justify;
         }
+
         .content {
                 background-color: #efefef;
                 font-family: "Roboto", sans-serif;
@@ -355,7 +443,6 @@ a:hover {
         .section {
                 padding-top: 4vw;
                 width: 100%;
-                color: blue;
         }
 
         p {
@@ -375,121 +462,6 @@ a:hover {
                 color: rgb(53, 53, 53);
                 z-index: 35;
         }
-        .container {
-                max-width: 100%;
-        }
-
-        .main {
-                margin-top: 30px;
-        }
-
-        #hamburger {
-                display: none;
-        }
-
-        #menu {
-                white-space: nowrap;
-        }
-        .image-container {
-                background-color: red;
-                height: 200px;
-        }
-        #my-container {
-                background-size: cover;
-                width: 100%;
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-        }
-
-        #mainContent {
-                width: 70%;
-                flex-direction: column;
-                align-items: center;
-        }
-
-        /****Hero Section ***/
-        #header {
-                width: 100%;
-                height: 600px;
-                min-height: 100%;
-                box-sizing: border-box;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                overflow: hidden;
-        }
-
-        .responsiveImages {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-        }
-
-        .content_imageLinks {
-                display: none;
-        }
-
-        .portfolio {
-                width: 18vw;
-                height: 18vw;
-                object-fit: cover;
-                margin: 2%;
-        }
-
-        .flexslider .slides img {
-                /* max-height: 200px; maximum height for all slides */
-                width: auto; /*proper aspect ratio of images*/
-                max-width: 100%; /*maximum width for all slides*/
-                margin: 0 auto; /*centering images in the container*/
-        }
-
-        #imgRow2,
-        #imgRow1 {
-                width: 100%;
-                display: flex;
-        }
-
-        #mainNav {
-                display: flex;
-                width: 100%;
-                position: fixed;
-                top: 0%;
-                z-index: 40;
-                overflow: hidden;
-                background-color: #ffd913;
-                box-shadow: 0 6px 7px -8px rgba(7, 7, 7, 0.5);
-        }
-
-        #menu {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                margin: 0 auto;
-                height: 70px;
-                align-items: center;
-        }
-
-        .slash {
-                display: inline-block;
-                margin: 0 20px 0 20px;
-                color: #fc589f;
-        }
-
-        a {
-                color: #202020;
-                text-decoration: none;
-                font-family: "Roboto", sans-serif;
-                text-transform: uppercase;
-                font-weight: bolder;
-                font-size: 1em;
-                letter-spacing: 0.2em;
-        }
-
-        a:hover {
-                color: #7f8181;
-        }
 
         @font-face {
                 font-family: "flexslider-icon";
@@ -503,193 +475,6 @@ a:hover {
                                 format("svg");
                 font-weight: normal;
                 font-style: normal;
-        }
-
-        .starAnimation {
-                animation: blink 700ms infinite ease-out;
-                animation-direction: alternate;
-        }
-
-        @keyframes blink {
-                0% {
-                        opacity: 0.2;
-                }
-                100% {
-                        opacity: 1;
-                }
-        }
-
-        .fast {
-                animation-duration: 300ms;
-        }
-
-        #heroContainer {
-                background-color: #ffde1d;
-                background: -webkit-radial-gradient(#ffde1d, #ffd001);
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-                position: relative;
-        }
-
-        .logoContainer {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                z-index: 1;
-        }
-
-        .logoAreaContainer {
-                width: 100%;
-                height: 100%;
-                z-index: 112;
-        }
-
-        .logoImage {
-                position: absolute;
-                width: 20vw;
-                height: 20vw;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-        }
-
-        .svg-container {
-                position: absolute;
-                z-index: 20;
-                display: block;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 35vw;
-                height: 35vw;
-        }
-
-        .dotted-circle {
-                fill: none;
-                stroke: #faf7eb;
-                stroke-linecap: round;
-                stroke-width: 2.5px;
-                stroke-dasharray: 0 13.5;
-                animation: small-spin 60s linear infinite;
-                display: block;
-                z-index: 21;
-                width: 50%;
-                height: 50%;
-                position: relative;
-                top: 25%;
-                left: 25%;
-                transform: translate(-50%, -50%);
-        }
-
-        .logo .logoT {
-                z-index: 14;
-                width: 70%;
-                height: auto;
-                position: absolute;
-                left: 50%;
-                top: 48%;
-        }
-
-        @keyframes example {
-                from {
-                        background-color: #ebdca4;
-                }
-                to {
-                        background-color: rgb(240, 189, 4);
-                }
-        }
-
-        @keyframes small-spin {
-                0% {
-                        transform: rotate(0deg);
-                }
-
-                100% {
-                        transform: rotate(-360deg);
-                }
-        }
-
-        .logo .outer-logo-circle {
-                fill: #dbbd7f;
-        }
-        .logo .owl-face {
-                fill: #faf7eb;
-        }
-        .logo .owl-face-outline {
-                fill: #214261;
-        }
-
-        .big-circle {
-                position: absolute;
-                width: 70%;
-        }
-
-        .big-circle img {
-                animation-name: big-spin;
-                animation-duration: 120s;
-                animation-timing-function: linear;
-                animation-delay: 0s;
-                animation-iteration-count: infinite;
-                animation-direction: normal;
-                animation-fill-mode: none;
-                animation-play-state: running;
-                width: 100%;
-                height: auto;
-        }
-
-        @keyframes big-spin {
-                0% {
-                        transform: rotate(0deg);
-                }
-
-                100% {
-                        transform: rotate(360deg);
-                }
-        }
-
-        /***ABOUT ME SECTION ***/
-        #aboutMeSection {
-                flex-direction: row;
-                width: 100%;
-                height: auto;
-                position: relative;
-        }
-
-        /***Responsive Images SECTION***/
-        .content_responsiveImages {
-                background-image: url(images/background.jpg);
-                background-size: cover;
-                width: 100%;
-                background-color: red;
-        }
-
-        /***VIDEO SECTION***/
-        .myVideo {
-                width: 100%;
-                height: auto;
-        }
-
-        /***MAP SECTION***/
-        .resp-container {
-                position: relative;
-                overflow: hidden;
-                padding-top: 56.25%;
-        }
-
-        .resp-iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-        }
-
-        /***FOOTER SECTION***/
-        #mainFooter {
-                margin-top: var(--margin-top);
         }
 }
 
