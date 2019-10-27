@@ -76,21 +76,18 @@
       </nav>
       <section id="heroContainer">
         <!--**********************LOGO*************************************-->
+        <video autoplay muted loop id="myVideo">
+          <source src="./images/hero_video.mp4" type="video/mp4">
+        </video>
         <div class="logoAreaContainer">
-          <img class="logoImage" src="images/Logo_All.png" alt="Logo" />
-          <div class="svg-container">
-            <svg class="dotted-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144" width="144"
-              height="144">
-              <circle cx="72" cy="72" r="71"></circle>
-            </svg>
-          </div>
+          <img class="logoImage" src="images/Logo_ribbon.svg" alt="Logo" />
         </div>
       </section>
     </header>
 
     <section id="mainContent">
       <!--**********************ABOUT ME*************************************-->
-      <section id="aboutMeSection" class="section">
+      <section class="section">
         <h2>Welcome to my responsive page!</h2>
 
         <!-- <p><em><strong>Welcome to my responsive page!</strong></em></p> -->
@@ -106,44 +103,50 @@
       </section>
 
       <!--**********************Columns Section*************************************-->
-      <section id="columnsSection" class="section">
+      <section class="section">
         <h2>Columns</h2>
         <p>
           The content below is organized into two columns using a
           custom CSS grid system that works similar to the
           Bootstrap grid.
         </p>
-        <section class="content columns">
-          <section class="columnLeft">
-            <h4>LEFT Column</h4>
-            <p>
-              In typography, a column is one or more vertical
-              blocks of content positioned on a page,
-              separated by gutters (vertical whitespace) or
-              rules (thin lines, in this case vertical).
-              Columns are most commonly used to break up large
-              bodies of text that cannot fit in a single block
-              of text on a page.
-            </p>
-          </section>
 
-          <section class="columnRight">
-            <h4>Right Column</h4>
-            <p>
-              In typography, a column is one or more vertical
-              blocks of content positioned on a page,
-              separated by gutters (vertical whitespace) or
-              rules (thin lines, in this case vertical).
-              Columns are most commonly used to break up large
-              bodies of text that cannot fit in a single block
-              of text on a page.
-            </p>
-          </section>
-        </section>
+        <div class="container content">
+          <div class="row">
+            <div class="col">
+              <h4>Left Column</h4>
+              <p>
+                In typography, a column is one or more vertical
+                blocks of content positioned on a page,
+                separated by gutters (vertical whitespace) or
+                rules (thin lines, in this case vertical).
+                Columns are most commonly used to break up large
+                bodies of text that cannot fit in a single block
+                of text on a page.
+              </p>
+            </div>
+
+            <div class="col">
+              <h4>Right Column</h4>
+              <p>
+                In typography, a column is one or more vertical
+                blocks of content positioned on a page,
+                separated by gutters (vertical whitespace) or
+                rules (thin lines, in this case vertical).
+                Columns are most commonly used to break up large
+                bodies of text that cannot fit in a single block
+                of text on a page.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </section>
 
+
+
       <!--**********************Responsive Images Section*************************************-->
-      <section id="responsiveImages" class="section">
+      <section class="section">
         <h2>Responsive Images</h2>
         <p>
           In Responsive Design, we learned how to use media
@@ -153,124 +156,127 @@
           CSS rules, we want to display different images based on
           the user’s device.
         </p>
+        <section class="content">
+          <div class="container">
+            <div class="row">
 
-        <div class="container">
-          <div class="row">
-
-            <div class="col-lg-4 col-md-6 col-6">
-
-              <img class="img-fluid " src="images/portfolio Images/img1.jpeg" alt="">
-
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-6">
-              <img class="img-fluid " src="images/portfolio Images/img2.jpeg" alt="">
-            </div>
-            <div class="col-lg-4 col-md-6 col-6">
-              <div href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid " src="images/portfolio Images/img3.jpeg" alt="">
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-6">
-              <div href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid " src="images/portfolio Images/img4.jpeg" alt="">
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-6">
-
-              <img class="img-fluid " src="images/portfolio Images/img5.jpeg" alt="">
-
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-6">
-              <div href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid" src="images/portfolio Images/img6.jpeg" alt="">
-              </div>
-            </div>
-          </div>
-
-          <!--**********************Video Responsive Section*************************************-->
-          <section id="videoSection" class="section">
-            <h2>responsive video</h2>
-            <p>
-              In a world of responsive and fluid layouts on the web
-              ONE MEDIA TYPE stands in the way of perfect harmony:
-              video. But, it is easy to make videos responsive like
-              the following.
-            </p>
-
-            <section class="content">
-              <video autoplay muted loop class="myVideo">
-                <source src="images/video.mp4" type="video/mp4" />
-                <source src="images/video.webm" type="video/webm" />
-                <source src="images/video.ogv" type="video/ogv" />
-                Your browser doesn't support video
-              </video>
-            </section>
-          </section>
-
-          <!--**********************Responsive Map Section*************************************-->
-          <section id="mapSection" class="section">
-            <h2>Responsive Map</h2>
-            <p>
-              Google Maps makes it easy to embed a map in your own
-              website. However, by default, Google Maps doesn't
-              provide responsive support. But, responsive maps can be
-              achieved with just a few lines of CSS. This technique
-              will work on any website platform.
-            </p>
-
-            <section class="content">
-              <div class="resp-container">
-                <iframe class="resp-iframe"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92471.74095046883!2d-79.71684124179689!3d43.591092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b472bb0426f45%3A0xdb67ca8a29007a66!2sSheridan+College+-+Hazel+McCallion+Campus!5e0!3m2!1sen!2sca!4v1564781151692!5m2!1sen!2sca"
-                  width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-              </div>
-            </section>
-          </section>
-
-          <!--**********************Slider Section*************************************-->
-          <section id="sliderSection" class="section">
-            <h2>slider</h2>
-
-            <p>
-              Flexslider is a popular jQuery responsive slider that
-              provides designers and developers a fast was to get up
-              and running with a image slider.
-            </p>
-            <section>
-
-              <div class="content ">
-                <div class="flexslider">
-                  <ul class="slides">
-                    <li>
-                      <img src="images/portfolio Images/img1.jpeg" />
-                    </li>
-                    <li>
-                      <img src="images/portfolio Images/img2.jpeg" />
-                    </li>
-                    <li>
-                      <img src="images/portfolio Images/img3.jpeg" />
-                    </li>
-                  </ul>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div href="#" class="d-block mb-4 h-100">
+                  <img class="img-fluid " src="images/portfolio Images/img1.jpeg" alt="">
                 </div>
               </div>
-            </section>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div href="#" class="d-block mb-4 h-100">
+                  <img class="img-fluid " src="images/portfolio Images/img2.jpeg" alt="">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div href="#" class="d-block mb-4 h-100">
+                  <img class="img-fluid " src="images/portfolio Images/img3.jpeg" alt="">
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div href="#" class="d-block mb-4 h-100">
+                  <img class="img-fluid " src="images/portfolio Images/img4.jpeg" alt="">
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+
+                <img class="img-fluid " src="images/portfolio Images/img5.jpeg" alt="">
+
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div href="#" class="d-block mb-4 h-100">
+                  <img class="img-fluid" src="images/portfolio Images/img6.jpeg" alt="">
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!--**********************Video Responsive Section*************************************-->
+        <section class="section">
+          <h2>responsive video</h2>
+          <p>
+            In a world of responsive and fluid layouts on the web
+            ONE MEDIA TYPE stands in the way of perfect harmony:
+            video. But, it is easy to make videos responsive like
+            the following.
+          </p>
+
+          <section class="content">
+            <video autoplay muted loop class="myVideo">
+              <source src="images/video.mp4" type="video/mp4" />
+              <source src="images/video.webm" type="video/webm" />
+              <source src="images/video.ogv" type="video/ogv" />
+              Your browser doesn't support video
+            </video>
           </section>
+        </section>
 
-          <!--**********************Footer Section*************************************-->
-          <footer id="mainFooter" class="section">
-            <section class="content">
-              <span>&copy;Dinh Tran</span>
-            </section>
-          </footer>
+        <!--**********************Responsive Map Section*************************************-->
+        <section class="section">
+          <h2>Responsive Map</h2>
+          <p>
+            Google Maps makes it easy to embed a map in your own
+            website. However, by default, Google Maps doesn't
+            provide responsive support. But, responsive maps can be
+            achieved with just a few lines of CSS. This technique
+            will work on any website platform.
+          </p>
 
-          <!--**********************Up Button*************************************-->
-          <a href="#top">
-            <i id="btnUp" class="fas fa-arrow-up"></i>
-          </a>
+          <section class="content">
+            <div class="resp-container">
+              <iframe class="resp-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92471.74095046883!2d-79.71684124179689!3d43.591092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b472bb0426f45%3A0xdb67ca8a29007a66!2sSheridan+College+-+Hazel+McCallion+Campus!5e0!3m2!1sen!2sca!4v1564781151692!5m2!1sen!2sca"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </section>
+        </section>
+
+        <!--**********************Slider Section*************************************-->
+        <section id="sliderSection" class="section">
+          <h2>slider</h2>
+
+          <p>
+            Flexslider is a popular jQuery responsive slider that
+            provides designers and developers a fast was to get up
+            and running with a image slider.
+          </p>
+          <section>
+
+            <div class="content ">
+              <div class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img src="images/portfolio Images/img1.jpeg" />
+                  </li>
+                  <li>
+                    <img src="images/portfolio Images/img2.jpeg" />
+                  </li>
+                  <li>
+                    <img src="images/portfolio Images/img3.jpeg" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!--**********************Footer Section*************************************-->
+        <footer id="mainFooter" class="section">
+          <section class="content">
+            <span>&copy;Dinh Tran</span>
+          </section>
+        </footer>
+
+        <!--**********************Up Button*************************************-->
+        <a href="#top">
+          <i id="btnUp" class="fas fa-arrow-up"></i>
+        </a>
       </section>
   </main>
 
