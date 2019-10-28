@@ -35,13 +35,13 @@
                         display: none;
 
                         #menu {
-                                width: 100%;
-                                display: flex;
-                                justify-content: center;
-                                margin: 0 auto;
-                                height: 6vh;
-                                align-items: center;
-                                white-space: nowrap;
+                                // width: 100%;
+                                // display: flex;
+                                // justify-content: center;
+                                // margin: 0 auto;
+                                // height: 6vh;
+                                // align-items: center;
+                                // white-space: nowrap;
                                 li {
                                         a {
                                                 color: #202020;
@@ -58,9 +58,9 @@
                                 }
                         }
 
-                        #hamburger {
-                                display: inline-block;
-                        }
+                        // #hamburger {
+                        //         display: inline-block;
+                        // }
                 }
 
                 #heroContainer {
@@ -168,26 +168,26 @@
         } //end mainContent
 }
 
-.slicknav_menu {
-        position: fixed;
-        top: 4%;
-        right: 4%;
-        z-index: 44;
-        display: flex;
-        width: 40px;
-        height: 40px;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-        align-items: center;
-}
+// .slicknav_menu {
+//         position: fixed;
+//         top: 4%;
+//         right: 4%;
+//         z-index: 44;
+//         display: flex;
+//         width: 40px;
+//         height: 40px;
+//         margin: 0;
+//         padding: 0;
+//         justify-content: center;
+//         align-items: center;
+// }
 
-.slicknav_btn {
-        width: 8vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-}
+// .slicknav_btn {
+//         width: 8vw;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+// }
 
 h2 {
         font-size: 4vw;
@@ -264,6 +264,12 @@ p {
 //***********************DESKTOP************************************
 @media only screen and (min-width: 992px) {
         #my-container {
+                    .slicknav_menu  {
+                        display: none;
+                }
+                #menu  {
+                        display: block;
+                }
                 .anchor {
                         padding-top: 15vh;
                 }

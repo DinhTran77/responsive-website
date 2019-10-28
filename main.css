@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --margin-top: 2%;
 }
@@ -52,22 +53,6 @@
   display: none;
 }
 
-#my-container #header #mainNav #menu {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
-  height: 6vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  white-space: nowrap;
-}
-
 #my-container #header #mainNav #menu li a {
   color: #202020;
   text-decoration: none;
@@ -78,10 +63,6 @@
 
 #my-container #header #mainNav #menu li a:hover {
   color: #7f8181;
-}
-
-#my-container #header #mainNav #hamburger {
-  display: inline-block;
 }
 
 #my-container #header #heroContainer {
@@ -216,39 +197,6 @@
   font-size: 2vw;
 }
 
-.slicknav_menu {
-  position: fixed;
-  top: 4%;
-  right: 4%;
-  z-index: 44;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 40px;
-  height: 40px;
-  margin: 0;
-  padding: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.slicknav_btn {
-  width: 8vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 h2 {
   font-size: 4vw;
   font-family: "Roboto", sans-serif;
@@ -318,6 +266,12 @@ p {
 }
 
 @media only screen and (min-width: 992px) {
+  #my-container     .slicknav_menu  {
+    display: none;
+  }
+  #my-container #menu  {
+    display: block;
+  }
   #my-container .anchor {
     padding-top: 15vh;
   }
