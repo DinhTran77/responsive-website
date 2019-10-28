@@ -66,9 +66,6 @@
 }
 
 #my-container #header #heroContainer {
-  background-color: #ffde1d;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -77,6 +74,7 @@
 
 #my-container #header #heroContainer #heroText {
   position: absolute;
+  background-color: #80c8bc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,14 +119,14 @@
 }
 
 #my-container #header #heroContainer #heroText h1 {
-  font-size: 6vw;
-  color: #ffde1d;
+  font-size: 11vw;
+  color: #fc4444;
   font-family: "Kaushan Script", cursive;
 }
 
 #my-container #header #heroContainer #heroText h2 {
-  font-size: 2vw;
-  color: #ffde1d;
+  font-size: 4vw;
+  color: #fc4444;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,11 +136,11 @@
 }
 
 #my-container #header #heroContainer #heroText h2 span {
-  width: 7vw;
-  background: #ffde1d;
-  height: 0.1vw;
+  width: 15vw;
+  background: #fc4444;
+  height: 0.2vw;
   display: inline-block;
-  margin: 0 1vw;
+  margin: 0 2vw;
 }
 
 #my-container #header #heroContainer #video_hero {
@@ -195,6 +193,14 @@
 #my-container #mainContent #mainFooter {
   margin-top: var(--margin-top);
   font-size: 2vw;
+}
+
+.slicknav_menu {
+  background: #ffde1d;
+}
+
+.slicknav_btn {
+  background: #0b0049;
 }
 
 h2 {
@@ -266,7 +272,7 @@ p {
 }
 
 @media only screen and (min-width: 992px) {
-  #my-container     .slicknav_menu  {
+  .slicknav_menu {
     display: none;
   }
   #my-container #menu  {
@@ -336,6 +342,71 @@ p {
   #my-container #header #heroContainer {
     background: white;
   }
+  #my-container #header #heroContainer #heroText {
+    position: absolute;
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    opacity: 0;
+    -webkit-animation: fadein 2s forwards;
+            animation: fadein 2s forwards;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  @-webkit-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #my-container #header #heroContainer #heroText h1 {
+    font-size: 7vw;
+    color: #fc4444;
+    font-family: "Kaushan Script", cursive;
+  }
+  #my-container #header #heroContainer #heroText h2 {
+    font-size: 2vw;
+    color: #fc4444;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #my-container #header #heroContainer #heroText h2 span {
+    width: 15vw;
+    background: #fc4444;
+    height: 0.15vw;
+    display: inline-block;
+    margin: 0 2vw;
+  }
   #my-container #header #heroContainer #video_hero {
     width: 100%;
     display: inline-block;
@@ -350,25 +421,25 @@ p {
     width: 100%;
     height: 100%;
     display: inline-block;
-    -webkit-animation: fadein 1s forwards;
-            animation: fadein 1s forwards;
+    -webkit-animation: fadein_overlay 1s forwards;
+            animation: fadein_overlay 1s forwards;
     -webkit-animation-delay: 0.5s;
             animation-delay: 0.5s;
   }
-  @-webkit-keyframes fadein {
+  @-webkit-keyframes fadein_overlay {
     from {
       opacity: 0;
     }
     to {
-      opacity: 0.7;
+      opacity: 0.5;
     }
   }
-  @keyframes fadein {
+  @keyframes fadein_overlay {
     from {
       opacity: 0;
     }
     to {
-      opacity: 0.7;
+      opacity: 0.5;
     }
   }
   #my-container #mainContent {
@@ -405,9 +476,6 @@ p {
   }
   p {
     margin-bottom: 1vw;
-  }
-  .slicknav_menu {
-    display: none;
   }
   /*****To TOP BUTTON********/
   #btnUp {
