@@ -31,6 +31,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
+  <!-- Font: Kaushan Script -->
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
   <script type="text/javascript" charset="utf-8">
     $(window).load(function () {
       $(".flexslider").flexslider();
@@ -77,7 +79,13 @@
 
 
       <section id="heroContainer">
-        <!--**********************LOGO*************************************-->
+        <div id='heroText'>
+          <h1 id='name'>Dinh Tran</h1>
+          <h2 id='tagline'>
+            <span class='line'></span>Responsive Design<span class='line'></span>
+          </h2>
+        </div>
+
         <video autoplay muted loop id="video_hero">
           <source src="./images/hero_video.mp4" type="video/mp4">
         </video>
@@ -106,9 +114,8 @@
       <section id='columns-section' class="section anchor">
         <h2>Columns</h2>
         <p>
-          The content below is organized into two columns using a
-          custom CSS grid system that works similar to the
-          Bootstrap grid.
+          The content below is organized into two columns using
+          the Bootstrap grid.
         </p>
 
         <div class="container content">
@@ -203,8 +210,7 @@
           <p>
             In a world of responsive and fluid layouts on the web
             ONE MEDIA TYPE stands in the way of perfect harmony:
-            video. But, it is easy to make videos responsive like
-            the following.
+            video. But, it is easy to make videos responsive as shown below.
           </p>
           <section class="content">
             <video autoplay muted loop id="video-responsive">
@@ -324,9 +330,13 @@
   </script>
 
   <script>
+    $("#btnUp").css("visibility", "hidden");
     $(window).on("scroll", function () {
-      if ($(window).scrollTop() > 800) {
+
+      if ($(window).scrollTop() > 600) {
+        $("#btnUp").css("visibility", "visible");
         $("#btnUp").fadeIn(400);
+
       } else {
         $("#btnUp").fadeOut(400);
       }
@@ -356,6 +366,7 @@
       });
     }(jQuery));
   </script>
+
 </body>
 
 </html>
