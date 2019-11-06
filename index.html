@@ -11,37 +11,36 @@
 
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src='main.js'></script>
 
   <link rel="stylesheet" href="css/reset.css" />
 
-  <link rel="stylesheet" href="https://use.typekit.net/ucq5ngw.css" />
+  <!-- <link rel="stylesheet" href="https://use.typekit.net/ucq5ngw.css" /> -->
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css" />
 
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Slicknav plugin -->
+  <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
+  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+  <!-- <link rel="stylesheet" href="css/slicknav.css" />
+  <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>-->
 
+
+  <!-- Flex Slider Plugin -->
   <link rel="stylesheet" href="css/flexslider.css" />
   <script src="js/jquery.flexslider.js"></script>
 
-  <link rel="stylesheet" href="css/slicknav.css" />
-  <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+  <!-- <link type="text/css" rel="stylesheet" href="css/all.min.css" /> -->
 
-  <link type="text/css" rel="stylesheet" href="css/all.min.css" />
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-  <!-- Font: Kaushan Script -->
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
 
-  <script src='main.js'></script>
-  <script type="text/javascript" charset="utf-8">
-    $(window).load(function () {
-      $(".flexslider").flexslider();
-    });
-  </script>
-  <link rel="stylesheet" href="./main.css" />
-</head>
 
 <body id="top" class="cursor">
   <main id="my-container">
@@ -49,31 +48,16 @@
       <!--**********************NAV BAR*************************************-->
       <nav id="mainNav">
         <ul id="menu">
-          <li>
-            <a href="#top">Home</a>
-          </li>
-          <li>
-            <a href="#about-section">About</a>
-          </li>
-          <li>
-            <a href="#columns-section">Bootstrap Grid</a>
-          </li>
-          <li>
-            <a href="#images-section">Images</a>
-          </li>
-          <li>
-            <a href="#video-section">Video</a>
-          </li>
-          <li>
-            <a href="#map-section">Google Map</a>
-          </li>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#images-section">Images</a></li>
+          <li><a href="#video-section">Video</a></li>
+          <li><a href="#map-section">Google Map</a></li>
           <li><a href="#slider-section">Slider</a></li>
         </ul>
-
-
       </nav>
 
-
+      <!--**********************Hero*************************************-->
       <section id="heroContainer">
         <div id='heroText'>
           <h1 id='name'>Dinh Tran</h1>
@@ -83,18 +67,17 @@
         </div>
 
         <video autoplay muted loop id="video_hero">
-          <source src="./images/hero_video.mp4" type="video/mp4">
+          <source src="./images/hero_video_smaller.mp4" type="video/mp4">
         </video>
         <div id='video_overlay'></div>
       </section>
     </header>
 
+
+    <!-- About Section -->
     <section id="mainContent">
-      <!--**********************ABOUT ME*************************************-->
       <section id='about-section' class="section anchor">
         <h2>About</h2>
-
-        <!-- <p><em><strong>Welcome to my responsive page!</strong></em></p> -->
         <p>
           Responsive web design (RWD) is an approach to web design
           that makes web pages render well on a variety of devices
@@ -105,73 +88,22 @@
           satisfaction.
         </p>
 
-        <img id='img-responsive-design' src="/images/responsive design.jpg" alt="">
-      </section>
-
-      <!--**********************Columns Section*************************************-->
-      <section id='columns-section' class="section anchor">
-        <h2>Grid</h2>
-        <p>
-          The content below is organized into two columns using
-          the Bootstrap grid.
-        </p>
-
-        <style>
-          .col-lg-6 {
-            width: 100%;
-
-          }
-
-          .col-lg-6:before {
-            padding-top: 100%;
-          }
-
-          img {
-            width: 100%;
-
-          }
-        </style>
-
-
-        <div class="container content">
-
-
-          <div class="box">
-            <div class="content"></div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6">
-              <img src="./images/Grid Images/1.jpg" alt="">
-            </div>
-
-            <div class="col-lg-6">
-              <img src="./images/Grid Images/2.jpg" alt="">
-            </div>
-
-            <div class="col-lg-6">
-              <img src="./images/Grid Images/3.jpg" alt="">
-            </div>
-            <div class="col">
-              <img src="./images/Grid Images/4.jpg" alt="">
-            </div>
-
-            <div class="col">
-              <img src="./images/Grid Images/5.jpg" alt="">
-
-              <div class="col">
-                <img src="./images/Grid Images/6.jpg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <ul>
+          <li>Fully responsive & page maintains proportions on zoom</li>
+          <li>SCSS</li>
+          <li>Sticky nav bar with on-scroll fade-in</li>
+          <li>To-top button that fades-in on scroll</li>
+          <li>Responsive image Bootstrap grid</li>
+          <li>Videos in MP4, Ogv and Webm formats</li>
+          <li>Iframe with Google Map</li>
+          <li>JQuery carousal plugin</li>
+        </ul>
       </section>
 
 
-
-      <!--**********************Responsive Images Section*************************************-->
+      <!-- Responsive Images Section -->
       <section id='images-section' class="section anchor">
-        <h2>Responsive Images</h2>
+        <h2>Responsive Images & Bootstrap Grid</h2>
         <p>
           In Responsive Design, we learned how to use media
           queries to create separate mobile, tablet, and desktop
@@ -180,130 +112,137 @@
           CSS rules, we want to display different images based on
           the user’s device.
         </p>
-        <section class="content">
-          <div class="container">
-            <div class="row">
-
-              <div class="col-sm-12 col-md-6 col-lg-4">
-                <div href="#" class="d-block mb-4 h-100">
-                  <img class="img-fluid " src="images/portfolio Images/img1.jpeg" alt="">
-                </div>
-              </div>
-
-              <div class="col-sm-12 col-md-6 col-lg-4">
-                <div href="#" class="d-block mb-4 h-100">
-                  <img class="img-fluid " src="images/portfolio Images/img2.jpeg" alt="">
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-6 col-lg-4">
-                <div href="#" class="d-block mb-4 h-100">
-                  <img class="img-fluid " src="images/portfolio Images/img3.jpeg" alt="">
-                </div>
-              </div>
-
-              <div class="col-sm-12 col-md-6 col-lg-4">
-                <div href="#" class="d-block mb-4 h-100">
-                  <img class="img-fluid " src="images/portfolio Images/img4.jpeg" alt="">
-                </div>
-              </div>
-
-              <div class="col-sm-12 col-md-6 col-lg-4">
-                <div href="#" class="d-block mb-4 h-100">
-                  <img class="img-fluid " src="images/portfolio Images/img5.jpeg" alt="">
-                </div>
-              </div>
-
-              <div class="col-sm-12 col-md-6 col-lg-4">
-                <div href="#" class="d-block mb-4 h-100">
-                  <img class="img-fluid" src="images/portfolio Images/img6.jpeg" alt="">
-                </div>
-              </div>
-            </div>
-        </section>
-
-        <!--**********************Video Responsive Section*************************************-->
-        <section id='video-section' class="section anchor">
-          <h2>responsive video</h2>
-          <p>
-            In a world of responsive and fluid layouts on the web
-            ONE MEDIA TYPE stands in the way of perfect harmony:
-            video. But, it is easy to make videos responsive as shown below.
-          </p>
-          <section class="content">
-            <video autoplay muted loop id="video-responsive">
-              <source src="images/video.mp4" type="video/mp4" />
-              <source src="images/video.webm" type="video/webm" />
-              <source src="images/video.ogv" type="video/ogv" />
-              Your browser doesn't support video
-            </video>
-          </section>
-        </section>
-
-        <!--**********************Responsive Map Section*************************************-->
-        <section id="map-section" class="section anchor">
-          <h2>Responsive Map</h2>
-          <p>
-            Google Maps makes it easy to embed a map in your own
-            website. However, by default, Google Maps doesn't
-            provide responsive support. But, responsive maps can be
-            achieved with just a few lines of CSS. This technique
-            will work on any website platform.
-          </p>
-
-          <section class="content">
-            <div class="resp-container">
-              <iframe class="resp-iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92471.74095046883!2d-79.71684124179689!3d43.591092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b472bb0426f45%3A0xdb67ca8a29007a66!2sSheridan+College+-+Hazel+McCallion+Campus!5e0!3m2!1sen!2sca!4v1564781151692!5m2!1sen!2sca"
-                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-          </section>
-        </section>
-
-        <!--**********************Slider Section*************************************-->
-        <section id="slider-section" class="section anchor">
-          <h2>slider</h2>
-
-          <p>
-            Flexslider is a popular jQuery responsive slider that
-            provides designers and developers a fast was to get up
-            and running with a image slider.
-          </p>
-          <section>
-
-            <div class="content ">
-              <div class="flexslider">
-                <ul class="slides">
-                  <li>
-                    <img src="images/portfolio Images/img1.jpeg" />
-                  </li>
-                  <li>
-                    <img src="images/portfolio Images/img2.jpeg" />
-                  </li>
-                  <li>
-                    <img src="images/portfolio Images/img3.jpeg" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-        </section>
-
-        <!--**********************Footer Section*************************************-->
-        <footer id="mainFooter" class="section">
-          <section class="content">
-            <span>&copy;Copyright 2019. Dinh Tran</span>
-          </section>
-        </footer>
-
-        <!--**********************Up Button*************************************-->
-        <a href="#top">
-          <i id="btnUp" class="fas fa-arrow-up"></i>
-        </a>
       </section>
+      <section class="content">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div href="#" class="d-block mb-4 h-100">
+                <img class="img-fluid " src="images/portfolio Images/img1.jpeg" alt="">
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div href="#" class="d-block mb-4 h-100">
+                <img class="img-fluid " src="images/portfolio Images/img2.jpeg" alt="">
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div href="#" class="d-block mb-4 h-100">
+                <img class="img-fluid " src="images/portfolio Images/img3.jpeg" alt="">
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div href="#" class="d-block mb-4 h-100">
+                <img class="img-fluid " src="images/portfolio Images/img4.jpeg" alt="">
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div href="#" class="d-block mb-4 h-100">
+                <img class="img-fluid " src="images/portfolio Images/img5.jpeg" alt="">
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div href="#" class="d-block mb-4 h-100">
+                <img class="img-fluid" src="images/portfolio Images/img6.jpeg" alt="">
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+      <!--Video Section -->
+      <section id='video-section' class="section anchor">
+        <h2>responsive video</h2>
+        <p>
+          In a world of responsive and fluid layouts on the web
+          ONE MEDIA TYPE stands in the way of perfect harmony:
+          video. But, it is easy to make videos responsive as shown below.
+        </p>
+        <section class="content">
+          <video autoplay muted loop id="video-responsive">
+            <source src="images/video.mp4" type="video/mp4" />
+            <source src="images/video.webm" type="video/webm" />
+            <source src="images/video.ogv" type="video/ogv" />
+            Your browser doesn't support video
+          </video>
+        </section>
+      </section>
+
+
+      <!--Google Map Section-->
+      <section id="map-section" class="section anchor">
+        <h2>Responsive Map</h2>
+        <p>
+          Google Maps makes it easy to embed a map in your own
+          website. However, by default, Google Maps doesn't
+          provide responsive support. But, responsive maps can be
+          achieved with just a few lines of CSS. This technique
+          will work on any website platform.
+        </p>
+
+        <section class="content">
+          <div class="resp-container">
+            <iframe class="resp-iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92471.74095046883!2d-79.71684124179689!3d43.591092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b472bb0426f45%3A0xdb67ca8a29007a66!2sSheridan+College+-+Hazel+McCallion+Campus!5e0!3m2!1sen!2sca!4v1564781151692!5m2!1sen!2sca"
+              width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </section>
+      </section>
+
+
+      <!--JQuery Slider Section-->
+      <section id="slider-section" class="section anchor">
+        <h2>slider</h2>
+
+        <p>
+          Flexslider is a popular jQuery responsive slider that
+          provides designers and developers a fast was to get up
+          and running with an image slider.
+        </p>
+        <section>
+
+          <div class="content ">
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <img src="images/portfolio Images/img1.jpeg" />
+                </li>
+                <li>
+                  <img src="images/portfolio Images/img2.jpeg" />
+                </li>
+                <li>
+                  <img src="images/portfolio Images/img3.jpeg" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+
+      <!--Footer-->
+      <footer id="mainFooter" class="section">
+        <section class="content">
+          <span>&copy;Copyright 2019. Dinh Tran</span>
+        </section>
+      </footer>
+
+
+      <!--To Top Button-->
+      <a href="#top">
+        <i id="btnUp" class="fas fa-arrow-up"></i>
+      </a>
+    </section>
   </main>
 
 
 
+  </head>
 </body>
 
 </html>

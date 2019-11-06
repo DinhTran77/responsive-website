@@ -1,8 +1,4 @@
 @charset "UTF-8";
-:root {
-  --margin-top: 2%;
-}
-
 .main {
   margin-top: 30px;
 }
@@ -61,7 +57,7 @@
 #my-container #header #mainNav #menu li a {
   color: #202020;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1em;
   letter-spacing: 0.2em;
 }
@@ -75,6 +71,7 @@
   height: 100%;
   overflow: hidden;
   position: relative;
+  background: black;
 }
 
 #my-container #header #heroContainer #heroText {
@@ -206,17 +203,6 @@
   font-size: 2vw;
 }
 
-.slicknav_menu {
-  position: fixed;
-  right: 0;
-  background: transparent;
-  z-index: 100;
-}
-
-.slicknav_btn {
-  background: #ec0857;
-}
-
 h2 {
   font-size: 4vw;
   font-family: "Roboto", sans-serif;
@@ -286,9 +272,6 @@ p {
 }
 
 @media only screen and (min-width: 992px) {
-  .slicknav_menu {
-    display: none;
-  }
   #my-container #menu  {
     display: block;
   }
@@ -328,6 +311,8 @@ p {
     overflow: hidden;
     background-color: transparent;
     height: 10vh;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   #my-container #header #mainNav #menu {
     width: 100%;
@@ -348,17 +333,14 @@ p {
     color: #ffffff;
     font-size: 1vw;
     letter-spacing: 0.2em;
-    margin-left: 7vw;
+    padding: 4vw;
     text-shadow: 4px 4px 4px #020202;
     opacity: 0;
-    -webkit-animation: fadein 2s forwards;
-            animation: fadein 2s forwards;
-  }
-  #my-container #header #mainNav #hamburger {
-    display: none;
+    -webkit-animation: fadein 2s forwards;
+            animation: fadein 2s forwards;
   }
   #my-container #header #heroContainer {
-    background: white;
+    background: black;
   }
   #my-container #header #heroContainer #heroText {
     position: absolute;
@@ -406,7 +388,7 @@ p {
   #my-container #header #heroContainer #heroText h1 {
     font-size: 7vw;
     color: white;
-    font-family: "Kaushan Script", cursive;
+    font-family: "Kaushan Script", cursive;
     text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
   }
   #my-container #header #heroContainer #heroText h2 {
