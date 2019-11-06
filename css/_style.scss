@@ -30,10 +30,14 @@
                 justify-content: center;
                 align-items: center;
                 overflow: hidden;
+                position: relative;
 
                 #mainNav {
                         display: none;
-
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: red;
                         #menu {
                                 // width: 100%;
                                 // display: flex;
@@ -57,10 +61,6 @@
                                         }
                                 }
                         }
-
-                        // #hamburger {
-                        //         display: inline-block;
-                        // }
                 }
 
                 #heroContainer {
@@ -71,7 +71,7 @@
 
                         #heroText {
                                 position: absolute;
-                                background-color: #80c8bc;
+                                background-color: #1a1a1c;
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: center;
@@ -94,19 +94,23 @@
                                 }
                                 h1 {
                                         font-size: 11vw;
-                                        color: #fc4444;
+                                        color: $color-text;
                                         font-family: "Kaushan Script", cursive;
+                                        text-shadow: 8px 8px 8px
+                                                rgba(2, 2, 2, 0.7);
                                 }
 
                                 h2 {
-                                        font-size: 4vw;
-                                        color: #fc4444;
+                                        font-size: 3vw;
+                                        color: $color-text;
 
                                         display: flex;
                                         align-items: center;
+                                        text-shadow: 8px 8px 8px
+                                                rgba(2, 2, 2, 0.7);
                                         span {
                                                 width: 15vw;
-                                                background: #fc4444;
+                                                background: $color-text;
                                                 height: 0.2vw;
                                                 display: inline-block;
                                                 margin: 0 2vw;
@@ -119,6 +123,12 @@
 
                         #video_overlay {
                                 display: none;
+                        }
+
+                        #about-section {
+                                #img-responsive-design {
+                                        width: 10%;
+                                }
                         }
                 }
         } //end header
@@ -167,11 +177,14 @@
 }
 
 .slicknav_menu {
-        background: #ffde1d;
+        position: fixed;
+        right: 0;
+        background: transparent;
+        z-index: 100;
 }
 
 .slicknav_btn {
-        background: rgb(11, 0, 73);
+        background: #ec0857;
 }
 
 h2 {
@@ -295,7 +308,12 @@ p {
                                                         color: #ffffff;
                                                         font-size: 1vw;
                                                         letter-spacing: 0.2em;
-                                                        margin-left: 5vw;
+                                                        margin-left: 7vw;
+                                                        text-shadow: 4px 4px 4px
+                                                                rgb(2, 2, 2);
+                                                        opacity: 0;
+                                                        animation: fadein 2s
+                                                                forwards;
                                                 }
                                         }
                                 }
@@ -333,20 +351,23 @@ p {
                                         }
                                         h1 {
                                                 font-size: 7vw;
-                                                color: #fc4444;
+                                                color: $color-text;
                                                 font-family: "Kaushan Script",
                                                         cursive;
+                                                text-shadow: 8px 8px 8px
+                                                        rgba(2, 2, 2, 0.7);
                                         }
 
                                         h2 {
-                                                font-size: 2vw;
-                                                color: #fc4444;
-
+                                                font-size: 1.5vw;
+                                                color: $color-text;
                                                 display: flex;
                                                 align-items: center;
+                                                text-shadow: 8px 8px 8px
+                                                        rgba(2, 2, 2, 0.7);
                                                 span {
                                                         width: 15vw;
-                                                        background: #fc4444;
+                                                        background: $color-text;
                                                         height: 0.15vw;
                                                         display: inline-block;
                                                         margin: 0 2vw;
@@ -375,7 +396,7 @@ p {
                                                         opacity: 0;
                                                 }
                                                 to {
-                                                        opacity: 0.5;
+                                                        opacity: 0.6;
                                                 }
                                         }
                                 }
@@ -428,7 +449,7 @@ p {
 
         /*****To TOP BUTTON********/
         #btnUp {
-                font-size: 4em;
+                font-size: 3vw;
                 right: 4vw;
                 bottom: 5vh;
         }

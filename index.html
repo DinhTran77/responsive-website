@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="description" content="Dinh Portfolio" />
   <meta name="keywords" content="Dinh Portfolio Sheridan" />
-  <title>Dinh's Portfolio</title>
+  <title>Responsive Webpage</title>
 
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -33,6 +33,8 @@
 
   <!-- Font: Kaushan Script -->
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+  <script src='main.js'></script>
   <script type="text/javascript" charset="utf-8">
     $(window).load(function () {
       $(".flexslider").flexslider();
@@ -54,13 +56,16 @@
             <a href="#about-section">About</a>
           </li>
           <li>
-            <a href="#columns-section">Columns</a>
+            <a href="#columns-section">Bootstrap Grid</a>
           </li>
           <li>
-            <a href="#images-section">Responsive Images</a>
+            <a href="#images-section">Images</a>
           </li>
           <li>
-            <a href="#video-section">Responsive video</a>
+            <a href="#video-section">Video</a>
+          </li>
+          <li>
+            <a href="#map-section">Google Map</a>
           </li>
           <li><a href="#slider-section">Slider</a></li>
         </ul>
@@ -73,7 +78,7 @@
         <div id='heroText'>
           <h1 id='name'>Dinh Tran</h1>
           <h2 id='tagline'>
-            <span class='line'></span>Responsive Design<span class='line'></span>
+            <span class='line'></span>Responsive Webpage<span class='line'></span>
           </h2>
         </div>
 
@@ -99,42 +104,63 @@
           are necessary across all devices to ensure usability and
           satisfaction.
         </p>
+
+        <img id='img-responsive-design' src="/images/responsive design.jpg" alt="">
       </section>
 
       <!--**********************Columns Section*************************************-->
       <section id='columns-section' class="section anchor">
-        <h2>Columns</h2>
+        <h2>Grid</h2>
         <p>
           The content below is organized into two columns using
           the Bootstrap grid.
         </p>
 
+        <style>
+          .col-lg-6 {
+            width: 100%;
+
+          }
+
+          .col-lg-6:before {
+            padding-top: 100%;
+          }
+
+          img {
+            width: 100%;
+
+          }
+        </style>
+
+
         <div class="container content">
+
+
+          <div class="box">
+            <div class="content"></div>
+          </div>
           <div class="row">
+            <div class="col-lg-6">
+              <img src="./images/Grid Images/1.jpg" alt="">
+            </div>
+
+            <div class="col-lg-6">
+              <img src="./images/Grid Images/2.jpg" alt="">
+            </div>
+
+            <div class="col-lg-6">
+              <img src="./images/Grid Images/3.jpg" alt="">
+            </div>
             <div class="col">
-              <h4>Left Column</h4>
-              <p>
-                In typography, a column is one or more vertical
-                blocks of content positioned on a page,
-                separated by gutters (vertical whitespace) or
-                rules (thin lines, in this case vertical).
-                Columns are most commonly used to break up large
-                bodies of text that cannot fit in a single block
-                of text on a page.
-              </p>
+              <img src="./images/Grid Images/4.jpg" alt="">
             </div>
 
             <div class="col">
-              <h4>Right Column</h4>
-              <p>
-                In typography, a column is one or more vertical
-                blocks of content positioned on a page,
-                separated by gutters (vertical whitespace) or
-                rules (thin lines, in this case vertical).
-                Columns are most commonly used to break up large
-                bodies of text that cannot fit in a single block
-                of text on a page.
-              </p>
+              <img src="./images/Grid Images/5.jpg" alt="">
+
+              <div class="col">
+                <img src="./images/Grid Images/6.jpg" alt="">
+              </div>
             </div>
           </div>
         </div>
@@ -276,87 +302,7 @@
       </section>
   </main>
 
-  <!--**********************Scripts*************************************-->
-  <script>
-    $(function () {
-      $('a[href*="#"]:not([href="#"])').click(function () {
-        if (
-          location.pathname.replace(/^\//, "") ==
-          this.pathname.replace(/^\//, "") &&
-          location.hostname == this.hostname
-        ) {
-          var target = $(this.hash);
-          target = target.length
-            ? target
-            : $("[name=" + this.hash.slice(1) + "]");
-          if (target.length) {
-            $("html, body").animate(
-              {
-                scrollTop: target.offset().top
-              },
-              700
-            );
-            return false;
-          }
-        }
-      });
-    });
-  </script>
 
-  <script>
-    $(window).load(function () {
-      $(".flexslider").flexslider({
-        animation: "slide"
-      });
-    });
-  </script>
-
-
-  <script>
-    $("#btnUp").css("visibility", "hidden");
-    $(window).on("scroll", function () {
-
-      if ($(window).scrollTop() > 600) {
-        $("#btnUp").css("visibility", "visible");
-        $("#btnUp").fadeIn(400);
-
-      } else {
-        $("#btnUp").fadeOut(400);
-      }
-    });
-  </script>
-
-
-  <script>
-    (function ($) {
-      $(document).ready(function () {
-
-        // fade in .navbar
-        $(function () {
-          $(window).scroll(function () {
-            // set distance user needs to scroll before we fadeIn navbar
-            if ($(this).scrollTop() > 100) {
-              $('#mainNav').css("background-color", "black");
-
-            } else {
-              $('#mainNav').css("background-color", "transparent");
-            }
-          });
-
-
-        });
-
-      });
-    }(jQuery));
-  </script>
-  <script>
-    $(function () {
-      $("#menu").slicknav({
-        label: "",
-        closeOnClick: true
-      });
-    });
-  </script>
 
 </body>
 

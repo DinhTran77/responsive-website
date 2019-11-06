@@ -47,10 +47,15 @@
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  position: relative;
 }
 
 #my-container #header #mainNav {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
 }
 
 #my-container #header #mainNav #menu li a {
@@ -74,7 +79,7 @@
 
 #my-container #header #heroContainer #heroText {
   position: absolute;
-  background-color: #80c8bc;
+  background-color: #1a1a1c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,24 +125,26 @@
 
 #my-container #header #heroContainer #heroText h1 {
   font-size: 11vw;
-  color: #fc4444;
+  color: white;
   font-family: "Kaushan Script", cursive;
+  text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
 }
 
 #my-container #header #heroContainer #heroText h2 {
-  font-size: 4vw;
-  color: #fc4444;
+  font-size: 3vw;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
 }
 
 #my-container #header #heroContainer #heroText h2 span {
   width: 15vw;
-  background: #fc4444;
+  background: white;
   height: 0.2vw;
   display: inline-block;
   margin: 0 2vw;
@@ -149,6 +156,10 @@
 
 #my-container #header #heroContainer #video_overlay {
   display: none;
+}
+
+#my-container #header #heroContainer #about-section #img-responsive-design {
+  width: 10%;
 }
 
 #my-container #mainContent {
@@ -196,11 +207,14 @@
 }
 
 .slicknav_menu {
-  background: #ffde1d;
+  position: fixed;
+  right: 0;
+  background: transparent;
+  z-index: 100;
 }
 
 .slicknav_btn {
-  background: #0b0049;
+  background: #ec0857;
 }
 
 h2 {
@@ -334,7 +348,11 @@ p {
     color: #ffffff;
     font-size: 1vw;
     letter-spacing: 0.2em;
-    margin-left: 5vw;
+    margin-left: 7vw;
+    text-shadow: 4px 4px 4px #020202;
+    opacity: 0;
+    -webkit-animation: fadein 2s forwards;
+            animation: fadein 2s forwards;
   }
   #my-container #header #mainNav #hamburger {
     display: none;
@@ -387,22 +405,24 @@ p {
   }
   #my-container #header #heroContainer #heroText h1 {
     font-size: 7vw;
-    color: #fc4444;
+    color: white;
     font-family: "Kaushan Script", cursive;
+    text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
   }
   #my-container #header #heroContainer #heroText h2 {
-    font-size: 2vw;
-    color: #fc4444;
+    font-size: 1.5vw;
+    color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
   }
   #my-container #header #heroContainer #heroText h2 span {
     width: 15vw;
-    background: #fc4444;
+    background: white;
     height: 0.15vw;
     display: inline-block;
     margin: 0 2vw;
@@ -431,7 +451,7 @@ p {
       opacity: 0;
     }
     to {
-      opacity: 0.5;
+      opacity: 0.6;
     }
   }
   @keyframes fadein_overlay {
@@ -439,7 +459,7 @@ p {
       opacity: 0;
     }
     to {
-      opacity: 0.5;
+      opacity: 0.6;
     }
   }
   #my-container #mainContent {
@@ -479,7 +499,7 @@ p {
   }
   /*****To TOP BUTTON********/
   #btnUp {
-    font-size: 4em;
+    font-size: 3vw;
     right: 4vw;
     bottom: 5vh;
   }
