@@ -9,42 +9,36 @@
   <meta name="keywords" content="Dinh Portfolio Sheridan" />
   <title>Responsive Webpage</title>
 
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script src='main.js'></script>
-
-  <link rel="stylesheet" href="css/reset.css" />
-
-  <!-- <link rel="stylesheet" href="https://use.typekit.net/ucq5ngw.css" /> -->
-
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./main.css" />
 
-  <!-- Slicknav plugin -->
-  <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
-  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
-  <!-- <link rel="stylesheet" href="css/slicknav.css" />
-  <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>-->
-
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
   <!-- Flex Slider Plugin -->
   <link rel="stylesheet" href="css/flexslider.css" />
   <script src="js/jquery.flexslider.js"></script>
 
-  <!-- <link type="text/css" rel="stylesheet" href="css/all.min.css" /> -->
-
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
+  <!-- CSS reset -->
+  <link rel="stylesheet" href="css/reset.css" />
 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./main.css" />
+
+  <!-- Javascript -->
+  <script src='/main.js'></script>
+</head>
 
 <body id="top" class="cursor">
-  <main id="my-container">
+  <main id="container-main">
     <header id="header">
+
       <!--**********************NAV BAR*************************************-->
       <nav id="mainNav">
         <ul id="menu">
@@ -66,16 +60,18 @@
           </h2>
         </div>
 
+        <div id='video_overlay'></div>
         <video autoplay muted loop id="video_hero">
           <source src="./images/hero_video_smaller.mp4" type="video/mp4">
         </video>
-        <div id='video_overlay'></div>
       </section>
     </header>
 
 
-    <!-- About Section -->
+    <!-- Main content starts here -->
     <section id="mainContent">
+
+      <!-- About Section -->
       <section id='about-section' class="section anchor">
         <h2>About</h2>
         <p>
@@ -89,14 +85,13 @@
         </p>
 
         <ul>
-          <li>Fully responsive & page maintains proportions on zoom</li>
-          <li>SCSS</li>
-          <li>Sticky nav bar with on-scroll fade-in</li>
-          <li>To-top button that fades-in on scroll</li>
-          <li>Responsive image Bootstrap grid</li>
-          <li>Videos in MP4, Ogv and Webm formats</li>
-          <li>Iframe with Google Map</li>
-          <li>JQuery carousal plugin</li>
+          <li><span>Fully responsive. Page maintains proportions on zoom</span></li>
+          <li><span>Sticky nav bar with on-scroll fade-in</span></li>
+          <li><span>To-top button that fades-in on scroll</span></li>
+          <li><span>Responsive image Bootstrap grid</span></li>
+          <li><span>Videos in MP4, Ogv and Webm formats</span></li>
+          <li><span>Iframe with Google Map</span></li>
+          <li><span>JQuery carousal plugin</span></li>
         </ul>
       </section>
 
@@ -243,6 +238,20 @@
 
 
   </head>
+
+
+  <script>
+    $("#btnUp").css("visibility", "hidden");
+
+    $(window).on("scroll", function () {
+      if ($(window).scrollTop() > 600) {
+        $("#btnUp").css("visibility", "visible");
+        $("#btnUp").fadeIn(400);
+      } else {
+        $("#btnUp").fadeOut(400);
+      }
+    });
+  </script>
 </body>
 
 </html>

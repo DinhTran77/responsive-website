@@ -15,7 +15,7 @@
     max-width: 100%;
 }
 
-#my-container {
+#container-main {
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -115,12 +115,6 @@
             #video_overlay {
                 display: none;
             }
-
-            #about-section {
-                #img-responsive-design {
-                    width: 10%;
-                }
-            }
         }
     } //end header
 
@@ -128,6 +122,18 @@
         width: 70%;
         flex-direction: column;
         align-items: center;
+
+        #about-section {
+            ul {
+                margin-left: 3vw;
+                list-style-type: disc;
+                li span {
+                    // margin-left: 2vw;
+                    position: relative;
+                    left: 10px;
+                }
+            }
+        }
         #map-section {
             .resp-container {
                 position: relative;
@@ -167,6 +173,7 @@
     } //end mainContent
 }
 
+// Shared styles
 h2 {
     font-size: 4vw;
     font-family: "Roboto", sans-serif;
@@ -190,7 +197,8 @@ h4 {
     padding: 2vw;
 }
 
-p {
+p,
+ul {
     font-family: "Roboto", sans-serif;
     font-size: 2.2vw;
     color: #2e2e2e;
@@ -239,7 +247,7 @@ p {
 
 //***********************DESKTOP************************************
 @media only screen and (min-width: 992px) {
-    #my-container {
+    #container-main {
         #menu  {
             display: block;
         }
@@ -339,6 +347,7 @@ p {
                         }
                     }
                 }
+
                 #video_hero {
                     width: 100%;
                     display: inline-block;
@@ -377,6 +386,7 @@ p {
         }
     }
 
+    // Shared Styles
     h2 {
         font-size: 1.8em;
         margin-bottom: 0.5em;
@@ -392,7 +402,8 @@ p {
         font-size: 1.3em;
     }
 
-    p {
+    p,
+    ul {
         font-size: 1.2vw;
         line-height: 2.5vw;
     }
