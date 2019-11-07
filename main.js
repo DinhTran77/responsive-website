@@ -4,6 +4,12 @@ $(document).ready(function() {
     });
 });
 
+// Slick nav
+
+$(function() {
+    $("#menu").slicknav();
+});
+
 // $(function() {
 //     $('a[href*="#"]:not([href="#"])').click(function() {
 //         if (

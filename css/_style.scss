@@ -25,6 +25,7 @@
             height: 40vh;
 
             #menu {
+                display: none;
                 li {
                     a {
                         color: #202020;
@@ -418,6 +419,10 @@
 
 //***********************DESKTOP************************************
 @media only screen and (min-width: 992px) {
+    .slicknav_menu {
+        display: none;
+    }
+
     #container-main {
         .anchor {
             // padding-top: 15vh;
@@ -445,7 +450,7 @@
                 transition: background-color 0.4s ease-in-out;
                 #menu {
                     width: 100%;
-
+                    display: inline-block;
                     li {
                         a {
                             color: #ffffff;
