@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     #header-hero {
         width: 100%;
         min-height: 80%;
@@ -17,11 +18,12 @@
         position: relative;
 
         #mainNav {
-            display: none;
             position: absolute;
             top: 0;
             left: 0;
-            background: red;
+            z-index: 2;
+            height: 40vh;
+
             #menu {
                 li {
                     a {
@@ -45,7 +47,7 @@
             overflow: hidden;
             position: relative;
             background: black;
-
+            background-image: url(../images/background_trees.jpg);
             #heroText {
                 position: absolute;
                 // background-color: #1a1a1c;
@@ -383,8 +385,8 @@
 
             p,
             ul {
-                font-size: 1.2vw;
-                line-height: 2.5vw;
+                font-size: 1.75vw;
+                line-height: 3.5vw;
             }
 
             .content {
@@ -394,7 +396,7 @@
             }
 
             .section {
-                padding-top: 4vw;
+                padding-top: 6vw;
                 width: 100%;
             }
 
@@ -418,7 +420,7 @@
 @media only screen and (min-width: 992px) {
     #container-main {
         .anchor {
-            padding-top: 15vh;
+            // padding-top: 15vh;
         }
         #header-hero {
             width: 100%;
@@ -431,7 +433,6 @@
             overflow: hidden;
 
             #mainNav {
-                transition: background-color 0.4s ease-in-out;
                 display: flex;
                 align-items: center;
                 width: 100%;
@@ -441,21 +442,16 @@
                 background-color: transparent;
                 height: 10vh;
                 box-shadow: none;
+                transition: background-color 0.4s ease-in-out;
                 #menu {
                     width: 100%;
-                    display: flex;
-                    justify-content: flex-end;
-                    margin-right: 3vw;
-                    height: 4vh;
-                    align-items: center;
-                    white-space: nowrap;
 
                     li {
                         a {
                             color: #ffffff;
                             font-size: 0.95vw;
                             letter-spacing: 0.2em;
-                            padding: 2vw;
+                            padding: 0 2vw;
                             text-shadow: 4px 4px 4px rgb(2, 2, 2);
                             opacity: 0;
                             animation: fadein 2s 1s forwards;

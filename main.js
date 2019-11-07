@@ -44,7 +44,7 @@ $(function() {
     $(window).scroll(function() {
         // set distance user needs to scroll before we fadeIn navbar
         if ($(this).scrollTop() > 100) {
-            $("#mainNav").css("background-color", "#0C1210");
+            $("#mainNav").css("background-color", "#000");
             $("#mainNav").css(
                 "box-shadow",
                 "0px -6px 5px 7px rgba(0,0,0,0.75)"
