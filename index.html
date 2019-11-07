@@ -9,6 +9,19 @@
   <meta name="keywords" content="Dinh Portfolio Sheridan" />
   <title>Responsive Webpage</title>
 
+
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <link rel="stylesheet" href="css/flexslider.css" />
+  <script src="js/jquery.flexslider.js"></script>
+
+
+  <!-- Font awesome -->
+  <link type="text/css" rel="stylesheet" href="css/all.min.css" />
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
@@ -37,22 +50,23 @@
 
 <body id="top" class="cursor">
   <main id="container-main">
-    <header id="header">
 
-      <!--**********************NAV BAR*************************************-->
+    <!--**********************Nav Bar and Hero*************************************-->
+    <!--NAV BAR-->
+    <header id="header-hero">
       <nav id="mainNav">
         <ul id="menu">
-          <li><a href="#top">Home</a></li>
           <li><a href="#about-section">About</a></li>
           <li><a href="#images-section">Images</a></li>
           <li><a href="#video-section">Video</a></li>
-          <li><a href="#map-section">Google Map</a></li>
+          <li><a href="#map-section">Iframe</a></li>
           <li><a href="#slider-section">Slider</a></li>
         </ul>
       </nav>
 
-      <!--**********************Hero*************************************-->
+      <!--Hero-->
       <section id="heroContainer">
+
         <div id='heroText'>
           <h1 id='name'>Dinh Tran</h1>
           <h2 id='tagline'>
@@ -60,7 +74,7 @@
           </h2>
         </div>
 
-        <div id='video_overlay'></div>
+        <!-- <div id='video_overlay'></div> -->
         <video autoplay muted loop id="video_hero">
           <source src="./images/hero_video_smaller.mp4" type="video/mp4">
         </video>
@@ -68,33 +82,26 @@
     </header>
 
 
-    <!-- Main content starts here -->
+    <!--**********************Main content starts here*************************************-->
     <section id="mainContent">
-
       <!-- About Section -->
       <section id='about-section' class="section anchor">
         <h2>About</h2>
         <p>
-          Responsive web design (RWD) is an approach to web design
-          that makes web pages render well on a variety of devices
-          and window or screen sizes. Recent work also considers
-          the viewer proximity as part of the viewing context as
-          an extension for RWD. Content, design and performance
-          are necessary across all devices to ensure usability and
-          satisfaction.
+          Welcome to my responsive website. I coded this project for a CSS layout course that focused on
+          developing media-rich websites that are fully responsive and retain correct layout even on zoom.
         </p>
 
         <ul>
           <li><span>Fully responsive. Page maintains proportions on zoom</span></li>
-          <li><span>Sticky nav bar with on-scroll fade-in</span></li>
-          <li><span>To-top button that fades-in on scroll</span></li>
+          <li><span>Sticky navigation bar that fades in on scroll</span></li>
+          <li><span>"Back to top" button that fades in on scroll</span></li>
           <li><span>Responsive image Bootstrap grid</span></li>
           <li><span>Videos in MP4, Ogv and Webm formats</span></li>
           <li><span>Iframe with Google Map</span></li>
           <li><span>JQuery carousal plugin</span></li>
         </ul>
       </section>
-
 
       <!-- Responsive Images Section -->
       <section id='images-section' class="section anchor">
@@ -107,48 +114,47 @@
           CSS rules, we want to display different images based on
           the user’s device.
         </p>
+
+        <section class="content">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div href="#" class="d-block mb-4 h-100">
+                  <img class="img-fluid " src="images/portfolio Images/img1.jpeg" alt="">
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div href="#" class="d-block mb-4 h-100">
+                  <img class="img-fluid " src="images/portfolio Images/img2.jpeg" alt="">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div href="#" class="d-block mb-4 h-100">
+                  <img class="img-fluid " src="images/portfolio Images/img3.jpeg" alt="">
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div href="#" class="d-block mb-4 h-100">
+                  <img class="img-fluid " src="images/portfolio Images/img4.jpeg" alt="">
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div href="#" class="d-block mb-4 h-100">
+                  <img class="img-fluid " src="images/portfolio Images/img5.jpeg" alt="">
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div href="#" class="d-block mb-4 h-100">
+                  <img class="img-fluid" src="images/portfolio Images/img6.jpeg" alt="">
+                </div>
+              </div>
+            </div>
+        </section>
       </section>
-      <section class="content">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-sm-12 col-md-6 col-lg-4">
-              <div href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid " src="images/portfolio Images/img1.jpeg" alt="">
-              </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-4">
-              <div href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid " src="images/portfolio Images/img2.jpeg" alt="">
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-              <div href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid " src="images/portfolio Images/img3.jpeg" alt="">
-              </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-4">
-              <div href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid " src="images/portfolio Images/img4.jpeg" alt="">
-              </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-4">
-              <div href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid " src="images/portfolio Images/img5.jpeg" alt="">
-              </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-4">
-              <div href="#" class="d-block mb-4 h-100">
-                <img class="img-fluid" src="images/portfolio Images/img6.jpeg" alt="">
-              </div>
-            </div>
-          </div>
-      </section>
-
 
       <!--Video Section -->
       <section id='video-section' class="section anchor">
@@ -234,24 +240,6 @@
       </a>
     </section>
   </main>
-
-
-
-  </head>
-
-
-  <script>
-    $("#btnUp").css("visibility", "hidden");
-
-    $(window).on("scroll", function () {
-      if ($(window).scrollTop() > 600) {
-        $("#btnUp").css("visibility", "visible");
-        $("#btnUp").fadeIn(400);
-      } else {
-        $("#btnUp").fadeOut(400);
-      }
-    });
-  </script>
 </body>
 
 </html>
