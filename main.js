@@ -7,7 +7,7 @@ $(document).ready(function() {
 // Slick nav
 
 $(function() {
-    $("#menu").slicknav();
+    $("#menu").slicknav({ label: "" });
 });
 
 // $(function() {

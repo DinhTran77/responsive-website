@@ -1,3 +1,12 @@
+.slicknav_menu li {
+  background: green;
+}
+
+.slicknav_menu {
+  display: block;
+  background: transparent;
+}
+
 #container-main {
   background-size: cover;
   width: 100%;
