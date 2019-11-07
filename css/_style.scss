@@ -1,13 +1,25 @@
 //**************************MOBILE***********************************************
 
 .slicknav_menu li {
-    background: green;
+    background: rgb(0, 0, 0);
+}
+
+.slicknav_menu a {
+    background: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    padding: 3vw 9vw;
+}
+
+.slicknav_menu .slicknav_btn {
+    padding: 2vw;
 }
 
 .slicknav_menu {
     display: block;
     background: transparent;
     position: absolute;
+    right: 0;
     z-index: 2;
 }
 
@@ -66,7 +78,6 @@
             z-index: 1;
             #heroText {
                 position: absolute;
-                // background-color: #1a1a1c;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -95,7 +106,7 @@
                 }
 
                 h2 {
-                    font-size: 3vw;
+                    font-size: 3.5vw;
                     color: $color-text;
                     font-family: "Roboto", sans-serif;
                     display: flex;
@@ -124,7 +135,6 @@
         width: 70%;
         flex-direction: column;
         align-items: center;
-
         #about-section {
             ul {
                 margin-left: 3vw;
@@ -293,7 +303,7 @@
                     li {
                         a {
                             color: #ffffff;
-                            font-size: 1.75vw;
+                            font-size: 2vw;
                             letter-spacing: 0.2em;
                             padding: 3vw;
                             text-shadow: 4px 4px 4px rgb(2, 2, 2);
@@ -332,21 +342,21 @@
                         }
                     }
                     h1 {
-                        font-size: 7vw;
+                        font-size: 12vw;
                         color: $color-text;
                         font-family: "Kaushan Script", cursive;
                         text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
                     }
 
                     h2 {
-                        font-size: 1.5vw;
+                        font-size: 3vw;
                         color: $color-text;
                         display: flex;
                         align-items: center;
                         text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
 
                         span {
-                            width: 15vw;
+                            width: 18vw;
                             background: $color-text;
                             height: 0.15vw;
                             display: inline-block;
@@ -470,7 +480,7 @@
                     li {
                         a {
                             color: #ffffff;
-                            font-size: 0.95vw;
+                            font-size: 1.1vw;
                             letter-spacing: 0.2em;
                             padding: 0 2vw;
                             text-shadow: 4px 4px 4px rgb(2, 2, 2);
@@ -508,14 +518,14 @@
                         }
                     }
                     h1 {
-                        font-size: 7vw;
+                        font-size: 5vw;
                         color: $color-text;
                         font-family: "Kaushan Script", cursive;
                         text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
                     }
 
                     h2 {
-                        font-size: 1.5vw;
+                        font-size: 1.4vw;
                         color: $color-text;
                         display: flex;
                         align-items: center;

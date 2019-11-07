@@ -1,11 +1,23 @@
 .slicknav_menu li {
-  background: green;
+  background: black;
+}
+
+.slicknav_menu a {
+  background: black;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  padding: 3vw 9vw;
+}
+
+.slicknav_menu .slicknav_btn {
+  padding: 2vw;
 }
 
 .slicknav_menu {
   display: block;
   background: transparent;
   position: absolute;
+  right: 0;
   z-index: 2;
 }
 
@@ -132,7 +144,7 @@
 }
 
 #container-main #header-hero #heroContainer #heroText h2 {
-  font-size: 3vw;
+  font-size: 3.5vw;
   color: white;
   font-family: "Roboto", sans-serif;
   display: -webkit-box;
@@ -348,7 +360,7 @@
   }
   #container-main #header-hero #mainNav #menu li a {
     color: #ffffff;
-    font-size: 1.75vw;
+    font-size: 2vw;
     letter-spacing: 0.2em;
     padding: 3vw;
     text-shadow: 4px 4px 4px #020202;
@@ -403,13 +415,13 @@
     }
   }
   #container-main #header-hero #heroContainer #heroText h1 {
-    font-size: 7vw;
+    font-size: 12vw;
     color: white;
     font-family: "Kaushan Script", cursive;
     text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
   }
   #container-main #header-hero #heroContainer #heroText h2 {
-    font-size: 1.5vw;
+    font-size: 3vw;
     color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -420,7 +432,7 @@
     text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
   }
   #container-main #header-hero #heroContainer #heroText h2 span {
-    width: 15vw;
+    width: 18vw;
     background: white;
     height: 0.15vw;
     display: inline-block;
@@ -551,7 +563,7 @@
   }
   #container-main #header-hero #mainNav #menu li a {
     color: #ffffff;
-    font-size: 0.95vw;
+    font-size: 1.1vw;
     letter-spacing: 0.2em;
     padding: 0 2vw;
     text-shadow: 4px 4px 4px #020202;
@@ -606,13 +618,13 @@
     }
   }
   #container-main #header-hero #heroContainer #heroText h1 {
-    font-size: 7vw;
+    font-size: 5vw;
     color: white;
     font-family: "Kaushan Script", cursive;
     text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
   }
   #container-main #header-hero #heroContainer #heroText h2 {
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     color: white;
     display: -webkit-box;
     display: -ms-flexbox;
