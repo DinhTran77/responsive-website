@@ -50,7 +50,9 @@ $color-text: white;
             z-index: 2;
             height: 40vh;
             display: none;
-
+            .brand {
+                display: none;
+            }
             #menu {
                 display: none;
                 li {
@@ -63,7 +65,7 @@ $color-text: white;
                     }
 
                     a:hover {
-                        color: #7f8181;
+                        color: white;
                     }
                 }
             }
@@ -76,7 +78,8 @@ $color-text: white;
             position: absolute;
             top: 0;
             background: black;
-            background-image: url(../images/background_trees.jpg);
+            background-image: url(../images/ballet.jpg);
+            background-size: cover;
             z-index: 1;
             #heroText {
                 position: absolute;
@@ -103,17 +106,18 @@ $color-text: white;
                 h1 {
                     font-size: 11vw;
                     color: $color-text;
-                    font-family: "Kaushan Script", cursive;
+
                     text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
                 }
 
                 h2 {
-                    font-size: 3.5vw;
+                    font-size: 8.5vw;
                     color: $color-text;
+                    color: #ffd306;
                     font-family: "Roboto", sans-serif;
-                    display: flex;
-                    align-items: center;
-                    text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
+                    text-align: center;
+                    text-shadow: 3px 3px 3px rgba(2, 2, 2, 0.7);
+                    padding: 4vw;
                     span {
                         width: 15vw;
                         background: $color-text;
@@ -128,7 +132,12 @@ $color-text: white;
             }
 
             #video_overlay {
-                display: none;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                opacity: 0.4;
+                background: black;
             }
         }
     } //end header-hero
@@ -190,12 +199,13 @@ $color-text: white;
             font-size: 2vw;
         }
         h2 {
-            font-size: 4vw;
+            font-size: 6vw;
             font-family: "Roboto", sans-serif;
             text-transform: capitalize;
             font-weight: bold;
             color: #2e2e2e;
             margin-bottom: 0.5em;
+            line-height: normal;
         }
         h3 {
             font-size: 3em;
@@ -215,12 +225,20 @@ $color-text: white;
         p,
         ul {
             font-family: "Roboto", sans-serif;
-            font-size: 2.2vw;
+            font-size: 4.2vw;
             color: #2e2e2e;
-            line-height: 4vw;
+            line-height: 8vw;
             text-align: justify;
         }
 
+        p {
+            margin-bottom: 6vw;
+        }
+        ul {
+            margin: 4vw;
+            padding-left: 3vw;
+            text-align: left;
+        }
         .content {
             background-color: #efefef;
             font-family: "Roboto", sans-serif;
@@ -292,22 +310,28 @@ $color-text: white;
                 height: 8vh;
                 box-shadow: none;
                 transition: background-color 0.4s ease-in-out;
+                padding: 4vw;
+                .brand {
+                    color: #ffd306;
+                    width: 30%;
+                    font-family: "Kaushan Script", "cursive";
+                    font-size: 3vw;
+                    display: inline-block;
+                }
                 #menu {
                     width: 100%;
                     display: flex;
-
                     justify-content: flex-end;
-                    margin-right: 3vw;
                     height: 1vh;
                     align-items: center;
                     white-space: nowrap;
 
                     li {
                         a {
-                            color: #ffffff;
-                            font-size: 2vw;
+                            color: #ffd306;
+                            font-size: 1.7vw;
                             letter-spacing: 0.2em;
-                            padding: 3vw;
+                            padding-left: 3vw;
                             text-shadow: 4px 4px 4px rgb(2, 2, 2);
                             opacity: 0;
                             animation: fadein 2s 1s forwards;
@@ -318,7 +342,9 @@ $color-text: white;
 
             #heroContainer {
                 background: black;
-
+                background-size: 100% auto;
+                display: flex;
+                justify-content: center;
                 #heroText {
                     position: absolute;
                     background: transparent;
@@ -346,12 +372,12 @@ $color-text: white;
                     h1 {
                         font-size: 12vw;
                         color: $color-text;
-                        font-family: "Kaushan Script", cursive;
+                        font-family: "Kaushan Script", "cursive";
                         text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
                     }
 
                     h2 {
-                        font-size: 3vw;
+                        font-size: 6vw;
                         color: $color-text;
                         display: flex;
                         align-items: center;
@@ -370,7 +396,8 @@ $color-text: white;
                 #video_hero {
                     width: auto;
                     height: 100%;
-                    display: inline-block;
+                    display: block;
+                    margin: auto;
                 }
 
                 #video_overlay {
@@ -378,21 +405,11 @@ $color-text: white;
                     position: absolute;
                     top: 0;
                     left: 0;
-                    opacity: 0;
+                    opacity: 0.4;
                     z-index: 5;
                     width: 100%;
                     height: 100%;
                     display: inline-block;
-                    animation: fadein_overlay 1s forwards;
-                    animation-delay: 0.5s;
-                    @keyframes fadein_overlay {
-                        from {
-                            opacity: 0;
-                        }
-                        to {
-                            opacity: 0.4;
-                        }
-                    }
                 }
             }
         }
@@ -419,6 +436,7 @@ $color-text: white;
             ul {
                 font-size: 1.75vw;
                 line-height: 3.5vw;
+                margin: 0;
             }
 
             .content {
@@ -474,17 +492,21 @@ $color-text: white;
                 background-color: transparent;
                 height: 10vh;
                 box-shadow: none;
+                padding: 3vw;
                 transition: background-color 0.4s ease-in-out;
+                // background: pink;
+                .brand {
+                    font-size: 2vw;
+                }
                 #menu {
                     width: 100%;
                     display: flex;
                     flex-direction: row;
                     li {
                         a {
-                            color: #ffffff;
-                            font-size: 1.1vw;
+                            font-size: 0.9vw;
                             letter-spacing: 0.2em;
-                            padding: 0 2vw;
+
                             text-shadow: 4px 4px 4px rgb(2, 2, 2);
                             opacity: 0;
                             animation: fadein 2s 1s forwards;
@@ -522,13 +544,15 @@ $color-text: white;
                     h1 {
                         font-size: 5vw;
                         color: $color-text;
+
                         font-family: "Kaushan Script", cursive;
                         text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
                     }
 
                     h2 {
-                        font-size: 1.4vw;
+                        font-size: 3.4vw;
                         color: $color-text;
+                        color: #ffd306;
                         display: flex;
                         align-items: center;
                         text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
@@ -553,21 +577,10 @@ $color-text: white;
                     position: absolute;
                     top: 0;
                     left: 0;
-                    opacity: 0;
                     z-index: 5;
                     width: 100%;
                     height: 100%;
                     display: inline-block;
-                    animation: fadein_overlay 1s forwards;
-                    animation-delay: 0.5s;
-                    @keyframes fadein_overlay {
-                        from {
-                            opacity: 0;
-                        }
-                        to {
-                            opacity: 0.6;
-                        }
-                    }
                 }
             }
         }
