@@ -1,17 +1,12 @@
 $(document).ready(function() {
-    $(window).on("load", function() {
-        $(".flexslider").flexslider();
-    });
-});
+    //Carousal
+    $(".flexslider").flexslider();
 
-// Slick nav
-$(document).ready(function() {
-    $(function() {
-        $("#menu").slicknav({ label: "" });
-    });
+    // Slick nav
+    $("#menu").slicknav({ label: "" });
 
+    // Back to Top button
     $("#btnUp").css("visibility", "hidden");
-
     $(window).on("scroll", function() {
         if ($(window).scrollTop() > 600) {
             $("#btnUp").css("visibility", "visible");
@@ -22,19 +17,16 @@ $(document).ready(function() {
     });
 
     // Fade-in Nav bar on scroll
-    $(function() {
-        $(window).scroll(function() {
-            // set distance user needs to scroll before we fadeIn navbar
-            if ($(this).scrollTop() > 100) {
-                $("#mainNav").css("background-color", "#000");
-                $("#mainNav").css(
-                    "box-shadow",
-                    "0px -6px 5px 7px rgba(0,0,0,0.75)"
-                );
-            } else {
-                $("#mainNav").css("background-color", "transparent");
-                $("#mainNav").css("box-shadow", "none");
-            }
-        });
+    $(window).on("scroll", function() {
+        if ($(this).scrollTop() > 100) {
+            $("#mainNav").css("background-color", "#000");
+            $("#mainNav").css(
+                "box-shadow",
+                "0px -6px 5px 7px rgba(0,0,0,0.75)"
+            );
+        } else {
+            $("#mainNav").css("background-color", "transparent");
+            $("#mainNav").css("box-shadow", "none");
+        }
     });
 });
