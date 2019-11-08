@@ -112,8 +112,8 @@
   left: 0;
   z-index: 7;
   opacity: 0;
-  -webkit-animation: fadein 3s forwards;
-          animation: fadein 3s forwards;
+  -webkit-animation: fadein 2s forwards;
+          animation: fadein 2s forwards;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
@@ -219,11 +219,12 @@
 }
 
 #container-main #mainContent #slider-section .flexslider .slides img {
-  /* max-height: 200px; maximum height for all slides */
   width: 100%;
-  /*proper aspect ratio of images*/
   margin: 0 auto;
-  /*centering images in the container*/
+}
+
+#container-main #mainContent #slider-section .flex-direction-nav a {
+  display: none;
 }
 
 #container-main #mainContent #mainFooter {

@@ -83,7 +83,7 @@ $color-text: white;
                 left: 0;
                 z-index: 7;
                 opacity: 0;
-                animation: fadein 3s forwards;
+                animation: fadein 2s forwards;
                 animation-delay: 0.5s;
                 @keyframes fadein {
                     from {
@@ -177,10 +177,12 @@ $color-text: white;
         }
         #slider-section {
             .flexslider .slides img {
-                /* max-height: 200px; maximum height for all slides */
-                width: 100%; /*proper aspect ratio of images*/
-                // max-width: 100%; /*maximum width for all slides*/
-                margin: 0 auto; /*centering images in the container*/
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .flex-direction-nav a {
+                display: none;
             }
         }
 
