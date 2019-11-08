@@ -114,8 +114,8 @@
   opacity: 0;
   -webkit-animation: fadein 2s forwards;
           animation: fadein 2s forwards;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
 }
 
 @-webkit-keyframes fadein {
@@ -385,8 +385,8 @@
     padding-left: 3vw;
     text-shadow: 4px 4px 4px #020202;
     opacity: 0;
-    -webkit-animation: fadein 2s 1s forwards;
-            animation: fadein 2s 1s forwards;
+    -webkit-animation: fadein 2s 0.5s forwards;
+            animation: fadein 2s 0.5s forwards;
     font-family: "Roboto", sans-serif;
   }
   #container-main #header-hero #heroContainer #heroText h1 {

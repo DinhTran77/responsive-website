@@ -84,7 +84,7 @@ $color-text: white;
                 z-index: 7;
                 opacity: 0;
                 animation: fadein 2s forwards;
-                animation-delay: 0.5s;
+                animation-delay: 1.75s;
                 @keyframes fadein {
                     from {
                         opacity: 0;
@@ -96,7 +96,6 @@ $color-text: white;
                 h1 {
                     font-size: 11vw;
                     color: $color-text;
-
                     text-shadow: 8px 8px 8px rgba(2, 2, 2, 0.7);
                 }
 
@@ -326,7 +325,7 @@ $color-text: white;
                             padding-left: 3vw;
                             text-shadow: 4px 4px 4px rgb(2, 2, 2);
                             opacity: 0;
-                            animation: fadein 2s 1s forwards;
+                            animation: fadein 2s 0.5s forwards;
                             font-family: "Roboto", sans-serif;
                         }
                     }
