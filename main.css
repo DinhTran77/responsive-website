@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .slicknav_menu li {
   background: black;
 }
