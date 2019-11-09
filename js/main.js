@@ -2,7 +2,8 @@ $(document).ready(function() {
     //Carousal
     $(".flexslider").flexslider();
 
-    // Slick nav
+    // Slick nav$('html, body').animate( {
+
     $("#menu").slicknav({ label: "" });
 
     // Back to Top button

@@ -9,6 +9,8 @@
   <meta name="keywords" content="Dinh Portfolio Sheridan" />
   <title>Responsive Webpage</title>
 
+
+  <!-- Content Security Policy -->
   <meta http-equiv="Content-Security-Policy" content="script-src 'self' 
           https://code.jquery.com/jquery-3.4.1.min.js
           http://127.0.0.1:5503/js/jquery.flexslider.js 
@@ -78,8 +80,11 @@
         </div>
 
         <div id='video_overlay'></div>
-        <video autoplay muted loop id="video_hero">
-          <source src="./images/videoplayback.mp4" type="video/mp4">
+        <video autoplay muted loop id="video_hero" poster='./images/Ballet_poster.jpg'>
+          <source src="./images/Ballet_Video.mp4" type="video/mp4">
+          <source src="images/Ballet_Video.webm" type="video/webm" />
+          <source src="images/Ballet_Video.oggtheora.ogv" type="video/ogv" />
+          Your browser doesn't support video
         </video>
       </section>
     </header>
@@ -89,6 +94,7 @@
     <section id="mainContent">
       <!-- About Section -->
       <section id='about-section' class="section anchor">
+        <a class="myAnchor"></a>
         <h2>About</h2>
         <p>
           Welcome to my responsive website. I coded this project for a CSS layout course that focused on
@@ -96,11 +102,11 @@
         </p>
 
         <ul>
-          <li><span>Fully responsive. Page maintains proportions on zoom</span></li>
+          <li><span>Page maintains proportions on zoom</span></li>
           <li><span>Sticky navigation bar that fades in on scroll</span></li>
           <li><span>"Back to top" button that fades in on scroll</span></li>
           <li><span>Flexible images</span></li>
-          <li><span>Videos in MP4, Ogv and Webm formats</span></li>
+          <li><span>Videos with poster in MP4, Ogv and Webm formats</span></li>
           <li><span>Iframe with Google Map</span></li>
           <li><span>JQuery carousal plugin</span></li>
           <li><span>Favicon</span></li>
@@ -178,7 +184,6 @@
         </section>
       </section>
 
-
       <!--Google Map Section-->
       <section id="map-section" class="section anchor">
         <h2>Responsive Map</h2>
@@ -198,7 +203,6 @@
           </div>
         </section>
       </section>
-
 
       <!--JQuery Slider Section-->
       <section id="slider-section" class="section anchor">
@@ -229,14 +233,12 @@
         </section>
       </section>
 
-
       <!--Footer-->
       <footer id="mainFooter" class="section">
         <section class="content">
           <span>&copy;Copyright 2019. Dinh Tran</span>
         </section>
       </footer>
-
 
       <!--To Top Button-->
       <a href="#top">

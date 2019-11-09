@@ -68,7 +68,7 @@ html {
             position: absolute;
             top: 0;
             background: black;
-            background-image: url(../images/ballet.jpg);
+            background-image: url(../images/background_ballet.jpg);
             background-size: cover;
             z-index: 1;
             display: flex;
@@ -137,6 +137,7 @@ html {
         width: 70%;
         flex-direction: column;
         align-items: center;
+
         #about-section {
             ul {
                 margin-left: 3vw;
@@ -281,6 +282,7 @@ html {
     #container-main {
         .anchor {
             padding-top: 15vh;
+            backgrou
         }
         #header-hero {
             width: 100%;
