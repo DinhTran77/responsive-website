@@ -244,9 +244,16 @@ html {
             margin-top: 2vw;
         }
 
+        //mobile
         .section {
-            padding-top: 8vw;
+            // padding-top: 8vw;
             width: 100%;
+
+            &::before {
+                height: 4vh;
+                content: "";
+                display: block;
+            }
         }
 
         #btnUp {
@@ -281,8 +288,7 @@ html {
     }
     #container-main {
         .anchor {
-            padding-top: 15vh;
-            backgrou
+            // padding-top: 15vh;
         }
         #header-hero {
             width: 100%;
@@ -397,9 +403,12 @@ html {
                 padding: 4%;
             }
 
+            // tablet
             .section {
-                padding-top: 6vw;
                 width: 100%;
+                &::before {
+                    height: 8vh;
+                }
             }
 
             p {
@@ -496,9 +505,13 @@ html {
                 padding: 4%;
             }
 
+            //desktop
             .section {
-                padding-top: 4vw;
+                // padding-top: 4vw;
                 width: 100%;
+                &::before {
+                    height: 15vh;
+                }
             }
 
             p {
