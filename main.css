@@ -118,8 +118,8 @@ html {
   opacity: 0;
   -webkit-animation: fadein 2s forwards;
           animation: fadein 2s forwards;
-  -webkit-animation-delay: 1.75s;
-          animation-delay: 1.75s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 @-webkit-keyframes fadein {
@@ -369,6 +369,8 @@ html {
     font-family: "Kaushan Script", "cursive";
     font-size: 3vw;
     display: inline-block;
+    -webkit-animation: fadein 2s forwards;
+            animation: fadein 2s forwards;
   }
   #container-main #header-hero #mainNav #menu {
     width: 100%;
@@ -391,8 +393,8 @@ html {
     padding-left: 3vw;
     text-shadow: 4px 4px 4px #020202;
     opacity: 0;
-    -webkit-animation: fadein 2s 0.5s forwards;
-            animation: fadein 2s 0.5s forwards;
+    -webkit-animation: fadein 2s forwards;
+            animation: fadein 2s forwards;
     font-family: "Roboto", sans-serif;
   }
   #container-main #header-hero #heroContainer #heroText h1 {
