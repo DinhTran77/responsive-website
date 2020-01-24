@@ -1,7 +1,7 @@
 # Project Name
 Reponsive website
 
-![Reponsive website image](./images/ResponsiveSite.jpg)
+![Reponsive website image](./images/ResponsiveSite2.jpg)
 
 ---
 
