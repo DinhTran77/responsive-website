@@ -1,5 +1,4 @@
-# Project Name
-Reponsive website
+# Reponsive website for CSS layout course
 
 ![Reponsive website image](./images/ResponsiveSite2.jpg)
 
